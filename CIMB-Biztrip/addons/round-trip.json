@@ -1,0 +1,421 @@
+{
+  "bookingFlightType": "round_trip",
+  "idTrip": "dLRHbwKNg",
+  "isBookHotel": false,
+  "total": 2662400,
+  "data": {
+      "selectedHotel": null,
+      "selectedOneWay": null,
+      "selectedRoundTrip": {
+          "departure": [
+              {
+                  "airlineDetail": [
+                      {
+                          "airlineCode": "JT",
+                          "airlineName": "Lion Air",
+                          "logoUrl": "https://ik.imagekit.io/tvlkdev/image/imageResource/2015/12/17/1450349861201-09ec8f298222a73d66e8e96aa3b918f0.png?tr=q-75"
+                      }
+                  ],
+                  "arrivalAirport": "DPS",
+                  "arrivalAirportDetail": {
+                      "city": "Denpasar",
+                      "company_id": 25236,
+                      "country": "Indonesia",
+                      "created_at": 1671718376209,
+                      "created_by": 157190,
+                      "id": "J8pGu6cVg",
+                      "id_airports": "J8pGu6cVg",
+                      "import_id": "YULaQ65VRz",
+                      "import_name": "63a45f04abd93-csv_airports.csv",
+                      "kode_iata": "DPS",
+                      "name": "Ngurah Rai",
+                      "timezone": "8",
+                      "updated_at": 1671718384644,
+                      "updated_by": 157190
+                  },
+                  "departureAirport": "CGK",
+                  "departureAirportDetail": {
+                      "city": "Jakarta",
+                      "company_id": 25236,
+                      "country": "Indonesia",
+                      "created_at": 1671717845381,
+                      "created_by": 157190,
+                      "id": "n5Iflec4R",
+                      "id_airports": "n5Iflec4R",
+                      "import_id": "YULaQ65VRz",
+                      "import_name": "63a45f04abd93-csv_airports.csv",
+                      "kode_iata": "CGK",
+                      "name": "Soekarno Hatta",
+                      "timezone": "7",
+                      "updated_at": 1671717852511,
+                      "updated_by": 157190
+                  },
+                  "flightId": "FLIGHT_ID_V2_5MnCz-KLUv/QBYAQQAhD1/yx8Jb1AcWB6PFDueWk17jAhXq4sISsx05DAeIx078l9ls6p9H32l/R1GjusPTwfEj7xeg7qdTBOFUmqghPF8Zbhis9XBB/xuutDwCAzAwka/0vWGwu38Dg1gFX6CsmcfejHdVa60ZAK1cAXLEzuI/SiAmLbLEEVMHgaIkl0=-KLUv/QBYAQQAscM5obtJ2GgJY1AXfuDU4l5K3QvGuxMVppiexBqD5AmQCbNOJ52VJZUy/5v3QRRA8CYN3dT84eM3uWs+1JUoVAYoRx/GelQxbwxwIrmv74N5nwOHswYm2bFR7UpTEXvbkk2vn2ongwHREYHVfpcNIrTxF2jvWwLrkSjHFwY8Cbo=",
+                  "journeys": [
+                      {
+                          "arrivalDetail": {
+                              "airportCode": "DPS",
+                              "arrivalDate": "05-01-2025",
+                              "arrivalTerminal": "99",
+                              "arrivalTime": "20:20"
+                          },
+                          "daysOffset": "0",
+                          "departureDetail": {
+                              "airportCode": "CGK",
+                              "departureDate": "05-01-2025",
+                              "departureTerminal": "3",
+                              "departureTime": "17:25"
+                          },
+                          "fareInfo": {
+                              "airlineFare": {
+                                  "adultFare": {
+                                      "additionalFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "adminFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "baseFareWithCurrency": {
+                                          "amount": "1172400.00",
+                                          "currency": "IDR"
+                                      },
+                                      "fuelSurchargeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "pscWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "totalFareWithCurrency": {
+                                          "amount": "1172400.00",
+                                          "currency": "IDR"
+                                      },
+                                      "vatWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      }
+                                  }
+                              },
+                              "netToAgent": {
+                                  "adultFare": {
+                                      "amount": "1172400.00",
+                                      "currency": "IDR"
+                                  }
+                              },
+                              "partnerFare": {
+                                  "adultFare": {
+                                      "adminFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "baseFareWithCurrency": {
+                                          "amount": "1172400.00",
+                                          "currency": "IDR"
+                                      },
+                                      "totalFareWithCurrency": {
+                                          "amount": "1172400.00",
+                                          "currency": "IDR"
+                                      }
+                                  }
+                              }
+                          },
+                          "journeyDuration": "115",
+                          "numOfTransits": "0",
+                          "refundableStatus": "REFUNDABLE",
+                          "segments": [
+                              {
+                                  "addOns": {
+                                      "baggageOptions": [
+                                          {
+                                              "baggageQuantity": "1",
+                                              "baggageType": "KG",
+                                              "baggageWeight": "20",
+                                              "id": "0",
+                                              "netToAgent": {
+                                                  "amount": "0.00",
+                                                  "currency": "IDR"
+                                              },
+                                              "priceWithCurrency": {
+                                                  "amount": "0.00",
+                                                  "currency": "IDR"
+                                              }
+                                          }
+                                      ],
+                                      "mealOptions": []
+                                  },
+                                  "arrivalDetail": {
+                                      "airportCode": "DPS",
+                                      "arrivalDate": "05-01-2025",
+                                      "arrivalTerminal": "99",
+                                      "arrivalTime": "20:20"
+                                  },
+                                  "brandAirline": "JT",
+                                  "departureDetail": {
+                                      "airportCode": "CGK",
+                                      "departureDate": "05-01-2025",
+                                      "departureTerminal": "3",
+                                      "departureTime": "17:25"
+                                  },
+                                  "flightCode": "JT-24",
+                                  "flightDurationInMinutes": "115",
+                                  "marketingAirline": "JT",
+                                  "operatingAirline": "JT",
+                                  "seatClass": "ECONOMY",
+                                  "subClass": "H"
+                              }
+                          ]
+                      }
+                  ],
+                  "numOfTransits": "0",
+                  "tripDuration": "115"
+              }
+          ],
+          "return": [
+              {
+                  "airlineDetail": [
+                      {
+                          "airlineCode": "QZ",
+                          "airlineName": "AirAsia Indonesia",
+                          "logoUrl": "https://ik.imagekit.io/tvlkdev/image/imageResource/2018/09/24/1537789908901-c6e710a9db65aaf3ba5c0703d0352706.png?tr=q-75"
+                      }
+                  ],
+                  "arrivalAirport": "CGK",
+                  "arrivalAirportDetail": {
+                      "city": "Jakarta",
+                      "company_id": 25236,
+                      "country": "Indonesia",
+                      "created_at": 1671717845381,
+                      "created_by": 157190,
+                      "id": "n5Iflec4R",
+                      "id_airports": "n5Iflec4R",
+                      "import_id": "YULaQ65VRz",
+                      "import_name": "63a45f04abd93-csv_airports.csv",
+                      "kode_iata": "CGK",
+                      "name": "Soekarno Hatta",
+                      "timezone": "7",
+                      "updated_at": 1671717852511,
+                      "updated_by": 157190
+                  },
+                  "departureAirport": "DPS",
+                  "departureAirportDetail": {
+                      "city": "Denpasar",
+                      "company_id": 25236,
+                      "country": "Indonesia",
+                      "created_at": 1671718376209,
+                      "created_by": 157190,
+                      "id": "J8pGu6cVg",
+                      "id_airports": "J8pGu6cVg",
+                      "import_id": "YULaQ65VRz",
+                      "import_name": "63a45f04abd93-csv_airports.csv",
+                      "kode_iata": "DPS",
+                      "name": "Ngurah Rai",
+                      "timezone": "8",
+                      "updated_at": 1671718384644,
+                      "updated_by": 157190
+                  },
+                  "flightId": "FLIGHT_ID_V2_5MnCz-KLUv/QBYgQMArbyrwYN0vwPMejRng4ohivQxhq/jQb0xDUrzzK+95RbFqgaAAGmbkbpKHvsyj12mEeBVESmNg1jq2MRUfLkmQFoUIwvfECLR3n+0rjPb03bhOAi0wuZMiuqHGnXyY2LNY2YyFsUphdwkAs5vUGNN0Q==-KLUv/QBYAQQAjPC2X4Ior6VlQah1OCH0e9dyAYcpIqZ7TCo1jH9pr8znro/+nEgDN1w9O3oE6INzMXDRYuKV027UTdTDcuOViyRb/xdQen+CL4EKR2+Hisa1tYdOg/2vC6LwRPGRbiIYJBBfGDB0vRsE7nkOYD18QLTxF2jvWwLrkSjHFwY8Cbo=",
+                  "journeys": [
+                      {
+                          "arrivalDetail": {
+                              "airportCode": "CGK",
+                              "arrivalDate": "06-01-2025",
+                              "arrivalTerminal": "1A",
+                              "arrivalTime": "07:50"
+                          },
+                          "daysOffset": "0",
+                          "departureDetail": {
+                              "airportCode": "DPS",
+                              "departureDate": "06-01-2025",
+                              "departureTerminal": "1",
+                              "departureTime": "07:00"
+                          },
+                          "fareInfo": {
+                              "airlineFare": {
+                                  "adultFare": {
+                                      "additionalFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "adminFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "baseFareWithCurrency": {
+                                          "amount": "1490000.00",
+                                          "currency": "IDR"
+                                      },
+                                      "fuelSurchargeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "pscWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "totalFareWithCurrency": {
+                                          "amount": "1490000.00",
+                                          "currency": "IDR"
+                                      },
+                                      "vatWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      }
+                                  }
+                              },
+                              "netToAgent": {
+                                  "adultFare": {
+                                      "amount": "1490000.00",
+                                      "currency": "IDR"
+                                  }
+                              },
+                              "partnerFare": {
+                                  "adultFare": {
+                                      "adminFeeWithCurrency": {
+                                          "amount": "0.00",
+                                          "currency": "IDR"
+                                      },
+                                      "baseFareWithCurrency": {
+                                          "amount": "1490000.00",
+                                          "currency": "IDR"
+                                      },
+                                      "totalFareWithCurrency": {
+                                          "amount": "1490000.00",
+                                          "currency": "IDR"
+                                      }
+                                  }
+                              }
+                          },
+                          "journeyDuration": "110",
+                          "numOfTransits": "0",
+                          "refundableStatus": "REFUNDABLE",
+                          "segments": [
+                              {
+                                  "addOns": {
+                                      "baggageOptions": [
+                                          {
+                                              "baggageQuantity": "1",
+                                              "baggageType": "KG",
+                                              "baggageWeight": "20",
+                                              "id": "0",
+                                              "netToAgent": {
+                                                  "amount": "0.00",
+                                                  "currency": "IDR"
+                                              },
+                                              "priceWithCurrency": {
+                                                  "amount": "0.00",
+                                                  "currency": "IDR"
+                                              }
+                                          }
+                                      ],
+                                      "mealOptions": []
+                                  },
+                                  "arrivalDetail": {
+                                      "airportCode": "CGK",
+                                      "arrivalDate": "06-01-2025",
+                                      "arrivalTerminal": "1A",
+                                      "arrivalTime": "07:50"
+                                  },
+                                  "brandAirline": "QZ",
+                                  "departureDetail": {
+                                      "airportCode": "DPS",
+                                      "departureDate": "06-01-2025",
+                                      "departureTerminal": "1",
+                                      "departureTime": "07:00"
+                                  },
+                                  "flightCode": "QZ-813",
+                                  "flightDurationInMinutes": "110",
+                                  "marketingAirline": "QZ",
+                                  "operatingAirline": "QZ",
+                                  "seatClass": "ECONOMY",
+                                  "subClass": "Q"
+                              }
+                          ]
+                      }
+                  ],
+                  "numOfTransits": "0",
+                  "tripDuration": "110"
+              }
+          ]
+      },
+      "selectedPackageRoundTrip": null,
+      "summaryHotel": [],
+      "summaryOneWay": [],
+      "summaryRoundTrip": {
+          "departure": [
+              {
+                  "additional_info": "Refundable",
+                  "addOns": [
+                      {
+                          "type": "journey",
+                          "sourceAirport": "CGK",
+                          "destinationAirport": "DPS",
+                          "bagagge_weight": "20",
+                          "baggage_add_ons_id": "0",
+                          "baggage_currency": "IDR",
+                          "baggage_price": "0.00",
+                          "baggage_quantity": "1",
+                          "baggage_type": "KG",
+                          "marketing_airline": "JT",
+                          "operating_airline": "JT",
+                          "meal_add_ons_id": "",
+                          "meal_currency": "",
+                          "meal_display_name": "",
+                          "meal_price": "",
+                          "meal_quantity": ""
+                      }
+                  ],
+                  "date_time": "05-01-2025 (17:25 - 20:20)",
+                  "details": "Lion Air",
+                  "info": "On Booking",
+                  "title": "CGK - DPS (direct)",
+                  "price": 1172400,
+                  "pessenger_name": "Subandi Subandi",
+                  "rc_code": "-",
+                  "status": "On Booking",
+                  "subtotal": 1172400
+              }
+          ],
+          "return": [
+              {
+                  "additional_info": "Refundable",
+                  "addOns": [
+                      {
+                          "type": "journey",
+                          "sourceAirport": "DPS",
+                          "destinationAirport": "CGK",
+                          "bagagge_weight": "20",
+                          "baggage_add_ons_id": "0",
+                          "baggage_currency": "IDR",
+                          "baggage_price": "0.00",
+                          "baggage_quantity": "1",
+                          "baggage_type": "KG",
+                          "marketing_airline": "QZ",
+                          "operating_airline": "QZ",
+                          "meal_add_ons_id": "",
+                          "meal_currency": "",
+                          "meal_display_name": "",
+                          "meal_price": "",
+                          "meal_quantity": ""
+                      }
+                  ],
+                  "date_time": "06-01-2025 (07:00 - 07:50)",
+                  "details": "AirAsia Indonesia",
+                  "info": "On Booking",
+                  "title": "DPS - CGK (direct)",
+                  "price": 1490000,
+                  "pessenger_name": "Subandi Subandi",
+                  "rc_code": "-",
+                  "status": "On Booking",
+                  "subtotal": 1490000
+              }
+          ]
+      },
+      "summaryPackageRoundTrip": {
+          "departure": [],
+          "return": []
+      }
+  }
+}

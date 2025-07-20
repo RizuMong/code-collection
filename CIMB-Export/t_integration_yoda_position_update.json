@@ -1,0 +1,496 @@
+{
+  "name": "t_integration_yoda_position_update",
+  "version": 2,
+  "size": "",
+  "type": "transaction",
+  "is_use_workflow": false,
+  "is_share_device_info": false,
+  "is_public": false,
+  "workflow": {
+      "default_rule": {
+          "rule_id": 0
+      },
+      "by_organigram_id": null,
+      "type": "",
+      "approver_by": "by_organigram",
+      "approver_selection": "",
+      "function_name": ""
+  },
+  "primary_key": "ids",
+  "class": {
+      "attachment": {
+          "name": {
+              "name": "name",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "url": {
+              "name": "url",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "log": {
+          "duration": {
+              "name": "duration",
+              "initial_value": "",
+              "type": "number",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "end_time": {
+              "name": "end_time",
+              "initial_value": "",
+              "type": "timestamp",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "start_time": {
+              "name": "start_time",
+              "initial_value": "",
+              "type": "timestamp",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "maps": {
+          "address": {
+              "name": "address",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "latitude": {
+              "name": "latitude",
+              "initial_value": "",
+              "type": "number",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "longitude": {
+              "name": "longitude",
+              "initial_value": "",
+              "type": "number",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "object": {
+          "id": {
+              "name": "id",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "name": {
+              "name": "name",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "person": {
+          "company_user_id": {
+              "name": "company_user_id",
+              "initial_value": "",
+              "type": "number",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "email": {
+              "name": "email",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "name": {
+              "name": "name",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "photo": {
+              "name": "photo",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "tags": {
+          "background": {
+              "name": "background",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "font_color": {
+              "name": "font_color",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "name": {
+              "name": "name",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": true,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      },
+      "timer": {
+          "duration": {
+              "name": "duration",
+              "initial_value": "",
+              "type": "number",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "log": {
+              "name": "log",
+              "initial_value": "",
+              "type": "[]log",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          },
+          "state": {
+              "name": "state",
+              "initial_value": "",
+              "type": "text",
+              "formula": "",
+              "is_use_regex": false,
+              "is_use_validation": false,
+              "is_primary_key": false,
+              "validation_container_variable": "",
+              "validation_container_message": "",
+              "validation_script": ""
+          }
+      }
+  },
+  "is_offline_mode": false,
+  "tablegroup_id": "ZeC9IRSNg",
+  "columns": {
+      "approved_by": {
+          "name": "approved_by",
+          "initial_value": "",
+          "type": "[]number",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "complete_date": {
+          "name": "complete_date",
+          "initial_value": "",
+          "type": "timestamp",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "created_at": {
+          "name": "created_at",
+          "initial_value": "",
+          "type": "timestamp",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "created_by": {
+          "name": "created_by",
+          "initial_value": "",
+          "type": "number",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "direct_supervisor_email": {
+          "name": "direct_supervisor_email",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "direct_supervisor_employee_code": {
+          "name": "direct_supervisor_employee_code",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "direct_supervisor_name": {
+          "name": "direct_supervisor_name",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "direct_supervisor_position_name": {
+          "name": "direct_supervisor_position_name",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "email": {
+          "name": "email",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "flow_status": {
+          "name": "flow_status",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "ids": {
+          "name": "ids",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "position_code": {
+          "name": "position_code",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "position_layer": {
+          "name": "position_layer",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "position_name": {
+          "name": "position_name",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "rc_code": {
+          "name": "rc_code",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "status": {
+          "name": "status",
+          "initial_value": "",
+          "type": "text",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "updated_at": {
+          "name": "updated_at",
+          "initial_value": "",
+          "type": "timestamp",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      },
+      "updated_by": {
+          "name": "updated_by",
+          "initial_value": "",
+          "type": "number",
+          "formula": "",
+          "is_use_regex": false,
+          "is_use_validation": false,
+          "is_primary_key": false,
+          "validation_container_variable": "",
+          "validation_container_message": "",
+          "validation_script": ""
+      }
+  }
+}

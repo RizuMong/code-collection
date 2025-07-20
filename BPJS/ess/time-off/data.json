@@ -1,0 +1,82 @@
+{
+  "summary": [
+    {
+      "id": 1,
+      "employee_id": 101,
+      "type": "Sick Leave",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-05",
+      "status": "Approved"
+    },
+    {
+      "id": 2,
+      "employee_id": 102,
+      "type": "Vacation",
+      "start_date": "2023-10-10",
+      "end_date": "2023-10-15",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "employee_id": 103,
+      "type": "Personal Leave",
+      "start_date": "2023-10-20",
+      "end_date": "2023-10-22",
+      "status": "Rejected"
+    },
+    {
+      "id": 4,
+      "employee_id": 104,
+      "type": "Maternity Leave",
+      "start_date": "2023-11-01",
+      "end_date": "2023-11-30",
+      "status": "Approved"
+    },
+    {
+      "id": 5,
+      "employee_id": 105,
+      "type": "Paternity Leave",
+      "start_date": "2023-11-05",
+      "end_date": "2023-11-10",
+      "status": "Pending"
+    },
+    {
+      "id": 6,
+      "employee_id": 106,
+      "type": "Bereavement Leave",
+      "start_date": null,
+      "end_date": null,
+      "status": null
+    },
+    {
+      "id": 7,
+      "employee_id": 107,
+      "type": null,
+      "start_date": null,
+      "end_date": null,
+      "status": null
+    },
+    {
+      "id": 8,
+      "employee_id": 108,
+      "type": null,
+      "start_date": null,
+      "end_date": null,
+      "status": null
+    },
+    {
+      "id": 9,
+      "employee_id": 109,
+      "type": null,
+      "start_date": null,
+      "end_date": null,
+      "status": null
+    },
+    {
+      "id": 10,
+      'employee_id':
+  ],
+  "message": "Success",
+  "code": 200,
+  "total": 10
+}

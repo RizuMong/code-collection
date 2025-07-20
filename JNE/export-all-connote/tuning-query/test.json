@@ -1,0 +1,120 @@
+[
+  {
+    "$match": {
+      "awb_date": { "$gte": 1714410000000, "$lte": 1714413599999 },
+      "branch_id": { "$in": ["CGK"] },
+      "customer_id": "80561601"
+    }
+  },
+  {
+    "$project": {
+      "awb_date": 1,
+      "awb_number": 1,
+      "invoice_date": 1,
+      "invoice_number": 1
+    }
+  },
+  {
+    "$addFields": {
+      "awb_date": {
+        "$cond": [
+          { "$eq": ["$awb_date", 0] },
+          "--",
+          {
+            "$concat": [
+              { "$toString": { "$dayOfMonth": { "$toDate": { "$add": ["$awb_date", 25200000] } } } },
+              "-",
+              {
+                "$switch": {
+                  "branches": [
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 1]
+                      },
+                      "then": "Jan"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 2]
+                      },
+                      "then": "Feb"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 3]
+                      },
+                      "then": "Mar"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 4]
+                      },
+                      "then": "Apr"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 5]
+                      },
+                      "then": "May"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 6]
+                      },
+                      "then": "Jun"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 7]
+                      },
+                      "then": "Jul"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 8]
+                      },
+                      "then": "Aug"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 9]
+                      },
+                      "then": "Sep"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 10]
+                      },
+                      "then": "Oct"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 11]
+                      },
+                      "then": "Nov"
+                    },
+                    {
+                      "case": {
+                        "$eq": [{ "$month": { "$toDate": { "$add": ["$awb_date", 25200000] } } }, 12]
+                      },
+                      "then": "Dec"
+                    }
+                  ],
+                  "default": "--"
+                }
+              },
+              "-",
+              {
+                "$substr": [
+                  { "$toString": { "$year": { "$toDate": { "$add": ["$awb_date", 25200000] } } } },
+                  2,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }  
+]

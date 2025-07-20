@@ -1,0 +1,36 @@
+{
+  "addOns": [
+      {
+          "bagagge_weight": "20",
+          "baggage_add_ons_id": "0",
+          "baggage_currency": "IDR",
+          "baggage_price": "0.00",
+          "baggage_quantity": "1",
+          "baggage_type": "KG",
+          "destinationAirport": "DPS",
+          "marketing_airline": "IP",
+          "meal_add_ons_id": "",
+          "meal_currency": "",
+          "meal_display_name": "",
+          "meal_price": "",
+          "meal_quantity": "",
+          "operating_airline": "IP",
+          "sourceAirport": "CGK",
+          "type": "journey"
+      }
+  ],
+  "meal_quantity": "1x Nasi Padang",
+  "baggage_quantity": "20 KG",
+  "additional_info": "Non-Refundable",
+  "date_time": "02-10-2025 (16:30 - 18:00)",
+  "details": "Pelita  Air",
+  "info": "On Booking",
+  "pessenger_name": "Subandi Subandi",
+  "price": 720280,
+  "rc_code": "-",
+  "status": "On Booking",
+  "subtotal": 720280,
+  "title": "CGK - DPS (direct)"
+}
+
+

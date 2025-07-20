@@ -1,0 +1,7 @@
+"https://portal-dev-bpjs.jojonomic.com/org-chart/?token=" + _hitFunction("get_token_embed_url", {});
+
+// https://portal-bpjs.jojonomic.com/org-chart/
+
+
+
+// https://portal-dev-bpjs.jojonomic.com/org-chart?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU3NjY5MjIsImlhdCI6MTc0NDIwOTMyMiwiaXNzIjoiam9qb25vbWljLWp3dC1zZXJ2aWNlIiwibGFuZyI6ImVuX1VTIiwicHJvdmlkZXIiOiIiLCJzZXNzX2lkIjo4NCwic2Vzc2lvbl9pZCI6IiIsInNlc3Npb25fc2V0dGluZyI6MSwic3ViIjoyMDY2NTQsInR5cGUiOjEsInVzZXIiOnsiY29tcGFueV9pZCI6Mjc0MTQsImVtYWlsIjoiYWxleC5icGpzQG1haWxpbmF0b3IiLCJpZCI6MjA2NjU0LCJ1c2VyX2NvbXBhbnlfaWQiOjE3ODU2NiwidXNlcl9yb2xlIjozLCJ1c2VyX3JvbGVfbmFtZSI6InVzZXIifX0.oOswDBo4v2dRt5aqaWoDwOSwkqVn_6B4JK8flD6YA3g

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realisasi MDS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .title {
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+      }
+
+      @page page-content {
+        margin: 0;
+        padding: 0;
+
+        margin-top: 150px;
+        margin-bottom: 150px;
+
+        odd-header-name: html_Header;
+        odd-footer-name: html_Footer;
+      }
+
+      div.page-content {
+        page: page-content;
+
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .header {
+        width: 100%;
+        height: auto;
+        margin-top: -34px;
+      }
+
+      .footer {
+        width: 100%;
+        height: auto;
+        margin-bottom: -34px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <htmlpageheader name="Header">
+      <img class="header" src="var_header_image" />
+    </htmlpageheader>
+
+    <htmlpagefooter name="Footer">
+      <div style="text-align: right; font-size: 12px; margin-right: 20px">
+        var_event_bed
+      </div>
+      <img class="footer" src="var_footer_image" />
+    </htmlpagefooter>
+
+    <div class="page-content">
+      <h1 class="title" style="font-size: 20px">
+        BERITA ACARA SELESAI DEVELOPMENT
+      </h1>
+      <table>
+        <tbody>
+          <tr>
+            <td
+              width="20%"
+              style="font-size: 12px; text-align: left; background-color: white"
+            >
+              Nama Event
+            </td>
+            <td width="80%" style="font-size: 12px; text-align: left">
+              : var_event_name
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              No BED
+            </td>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              : var_event_bed
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              Tanggal pelaksanaan
+            </td>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              : var_event_date
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              Tempat pelaksanaan
+            </td>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              : var_event_venue
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              PIC Kegiatan
+            </td>
+            <td style="font-size: 12px; text-align: left; padding-top: 5px">
+              : var_event_pic
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="text-align: justify">
+        Bersama dengan ini kami sampaikan bahwa kegiatan tersebut telah selesai
+        dilaksanakan dengan sebagai mestinya dengan keterangan sebagai berikut:
+      </p>
+      <table>
+        <thead style="font-size: 13px">
+          <tr>
+            <th width="10%" style="text-align: center">NO</th>
+            <th width="13%" style="text-align: center">NRP</th>
+            <th width="25%" style="text-align: center">NAMA</th>
+            <th width="25%" style="text-align: center">EVENT DEVELOPMENT</th>
+            <th width="12%" style="text-align: center">JOBSITE</th>
+            <th width="20%" style="text-align: center">BIAYA</th>
+          </tr>
+        </thead>
+        <tbody>
+          var_ket_data
+        </tbody>
+      </table>
+      <div>
+        <p style="text-align: justify">
+          Demikian Berita Acara Selesai Development ini dibuat untuk digunakan
+          sebagai mana mestinya.
+        </p>
+        <p style="text-align: right">
+          var_event_jobsite_region, var_created_at
+        </p>
+        <table style="width: 100%">
+          <tr style="width: 100%">
+            <td
+              style="
+                text-align: center;
+                font-size: 13px;
+                border-color: white;
+                width: 50%;
+              "
+            >
+              Disetujui oleh:
+              <br />
+              <img style="height: 100px" src="var_ttd_approver" alt="TTD" />
+              <div>
+                <b>
+                  <u> (var_approver) </u>
+                </b>
+                <br />
+                var_jabatan_approver
+              </div>
+            </td>
+
+            <td
+              style="
+                text-align: center;
+                font-size: 13px;
+                border-color: white;
+                width: 50%;
+              "
+            >
+              Diajukan oleh:
+              <br />
+              <img style="height: 100px" src="var_ttd_pic" alt="TTD" />
+              <div>
+                <b>
+                  <u> (var_event_pic) </u>
+                </b>
+                <br />
+                var_jabatan_pic
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

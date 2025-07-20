@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documents PDF</title>
+    <style media="all" rel="stylesheet">
+      .border-awal {
+        border: 1px solid black;
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 350px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer-body {
+        position: fixed;
+        /* bottom: 0; */
+        width: 100%;
+      }
+
+      .page-break {
+        page-break-before: always; /* Mengatur untuk memulai halaman baru sebelum elemen */
+      }
+
+      p {
+        margin: 0;
+      }
+
+      @page {
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        margin-left: 1.5cm;
+        margin-right: 1.5cm;
+      }
+
+      .text-abu {
+        color: gray;
+      }
+
+      .font-calibri {
+        font-family: Calibri, sans-serif;
+      }
+
+      .page-header,
+      .page-header-space {
+        height: 100px;
+      }
+      .page-footer,
+      .page-footer-space {
+        height: 50px;
+      }
+
+      .header {
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+      }
+      .font-header {
+        color: black;
+        font-size: 12pt;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: nones;
+        font-family: Calibri, sans-serif;
+      }
+
+      .header-abu {
+        color: gray;
+        font-size: 12pt;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: nones;
+        font-family: Calibri, sans-serif;
+      }
+
+      .table-ttd {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .border-black {
+        border: 1px solid black;
+      }
+      .text-center {
+        text-align: center;
+      }
+
+      .text-footer {
+        font-size: 11px;
+        color: black;
+        font-style: italic;
+      }
+
+      .bg-header {
+        background-color: #DEEAF6;
+      }
+
+      .header-content {
+        font-size: 12pt;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: nones;
+        font-family: Calibri, sans-serif;
+      }
+
+      .text-base {
+        font-size: 11pt;
+        font-weight: 500;
+        font-style: normal;
+        text-decoration: nones;
+        font-family: Calibri, sans-serif;
+        color: gray;
+      }
+      
+
+      .align-top {
+        vertical-align: top;
+      }
+
+      .centered {
+        width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+        margin: 0 auto;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="border-awal">
+      <!-- Content Awal -->
+      <table style="width: 100%">
+        <tr>
+          <!-- Dinamis -->
+          <th>
+            <img
+              style="width: 80px"
+              src="https://officeless-files-1jrxrmbq.s3.ap-southeast-3.amazonaws.com/230/660517b583e0d-Logo-Riung.png"
+              alt="Logo Riung"
+            />
+          </th>
+        </tr>
+        <tr>
+          <!-- Dinamis -->
+          <th class="font-header">STANDAR OPERASIONAL PROSEDUR (SOP)</th>
+        </tr>
+        <tr>
+          <!-- Dinamis -->
+          <th class="font-header">PENNGEDALIAN DOKUMEN dan CATATAN</th>
+        </tr>
+        <tr>
+          <!-- Dinamis -->
+          <th class="font-header">PT RIUNG MITRA LESTARI</th>
+        </tr>
+        <tr style="margin-top: 20px">
+          <!-- Dinamis Isi Nomor Document nya -->
+          <th class="font-header" style="margin-top: 20px">
+            No. Dokumen : <span class="header-abu">SOP-CSD-001</span>
+          </th>
+        </tr>
+      </table>
+
+      <!-- Table TTD -->
+      <table class="table-ttd" style="margin-top: 20px; width: 100%">
+        <tr class="font-header table-ttd">
+          <th></th>
+          <th class="border-black font-calibri">Jabatan / Nama</th>
+          <th class="border-black font-calibri">Tanda Tangan</th>
+          <th class="border-black font-calibri">Tanggal</th>
+        </tr>
+        <!-- Disiapkan Oleh -->
+        <tr >
+          <td class="border-black font-calibri">Disiapkan oleh</td>
+          <td class="border-black text-center">
+            <!-- Dinamis -->
+            <p class= "font-calibri">Dodi Kosrianto</p>
+            <p class= "font-calibri">CPSD Manager</p>
+          </td>
+          <td class="border-black text-center">
+            <!-- TTD Basah -->
+            <img
+              style="width: 50px"
+              src="https://wallpapers.com/images/featured/blank-white-7sn5o1woonmklx1h.jpg"
+              alt="TTD"
+            />
+          </td>
+          <!-- Dinamis -->
+          <td class="border-black text-center font-calibri">
+            27 Maret 2024
+          </td>
+        </tr>
+        <!-- Diperiksa Oleh -->
+        <tr>
+          <td rowspan="2" class="border-black font-calibri">Diperiksa oleh</td>
+          <td class="border-black text-center">
+            <!-- Dinamis -->
+            <p class= "font-calibri">R. Eko Jati Kurniawan</p>
+            <p class= "font-calibri">General Manager Terkait</p>
+          </td>
+          <td class="border-black text-center">
+            <!-- TTD Basah -->
+            <img
+              style="width: 50px"
+              src="https://wallpapers.com/images/featured/blank-white-7sn5o1woonmklx1h.jpg"
+              alt="TTD"
+            />
+          </td>
+          <!-- Dinamis -->
+          <td class="border-black text-center font-calibri">
+            29 Maret 2024
+          </td>
+        </tr>
+        <tr>
+          <td class="border-black text-center">
+            <!-- Dinamis -->
+            <p class= "font-calibri">R. Eko Jati Kurniawan</p>
+            <p class= "font-calibri">General Manager Terkait</p>
+          </td>
+          <td class="border-black text-center">
+            <!-- TTD Basah -->
+            <img
+              style="width: 50px"
+              src="https://wallpapers.com/images/featured/blank-white-7sn5o1woonmklx1h.jpg"
+              alt="TTD"
+            />
+          </td>
+          <!-- Dinamis -->
+          <td class="border-black text-center font-calibri">
+            29 Maret 2024
+          </td>
+        </tr>
+        <!-- Disetujui Oleh -->
+        <tr>
+          <td class="border-black font-calibri">Disetujui oleh</td>
+          <td class="border-black text-center">
+            <!-- Dinamis -->
+            <p class= "font-calibri">R. Eko Jati Kurniawan</p>
+            <p class= "font-calibri">General Manager Terkait</p>
+          </td>
+          <td class="border-black text-center">
+            <!-- TTD Basah -->
+            <img
+              style="width: 50px"
+              src="https://wallpapers.com/images/featured/blank-white-7sn5o1woonmklx1h.jpg"
+              alt="TTD"
+            />
+          </td>
+          <!-- Dinamis -->
+          <td class="border-black text-center font-calibri">
+            29 Maret 2024
+          </td>
+        </tr>
+      </table>
+
+      <!-- Dokumen diverifikasi-->
+      <table style="margin-top: 15px; width: 100%">
+        <tr>
+          <td>
+            <p class="font-calibri" style="font-weight: semibold; font-size: 15px">
+              Dokumen ini telah di verifikasi dan divalidasi kesesuaiannya dengan hasil penilaian resiko, untuk disetujui penggunaanya oleh:
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <!-- TTD Disetujui -->
+      <table class="table-ttd centered" style="width: 30%; margin-top: 5px">
+        <tr>
+          <td class= "font-calibri border-black text-center">Disetujui oleh</td>
+        </tr>
+        <tr>
+          <th>
+            <!-- TTD Basah -->
+            <img
+              style="width: 60px"
+              src="https://wallpapers.com/images/featured/blank-white-7sn5o1woonmklx1h.jpg"
+              alt="TTD"
+            />
+        </tr>
+        <tr>
+            <td class= "font-calibri border-black">Nama :</th>
+        </tr>
+        <tr>
+          <td class= "font-calibri border-black">Jabatan :</th>
+      </tr>
+      <tr>
+        <td class= "font-calibri border-black">Tanggal :</th>
+      </tr>
+      </table>
+
+      <!-- Table Perubahan -->
+      <table style="margin-top: 15px; width: 100%">
+        <tr>
+          <td>
+            <p class="font-calibri" style="font-weight: bold; font-size: 15px">
+              Catatan Perubahan Dokumen
+            </p>
+          </td>
+        </tr>
+      </table>
+      <table style="width: 100%" class="table-ttd">
+        <tr>
+          <th class="border-black font-calibri">No. Revisi</th>
+          <th class="border-black font-calibri">Halaman</th>
+          <th class="border-black font-calibri">
+            Bagian / Sub Bagian Yang Direvisi
+          </th>
+          <th class="border-black font-calibri">Tahun</th>
+        </tr>
+        <!-- Dinamis dan Tambah2 -->
+        <tr>
+          <td class="border-black font-calibri text-abu text-center">1</td>
+          <td class="border-black font-calibri text-abu text-center">XX</td>
+          <td class="border-black font-calibri text-abu text-center">XX</td>
+          <td class="border-black font-calibri text-abu text-center">XX</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <table>
+      <tr>
+        <td>
+          <div class="footer" style="border-top: 1px solid black">
+            <p
+              style="margin-top: 5px"
+              class="text-center font-calibri text-footer"
+            >
+              Tidak diperkenankan menyalin dan atau memperbanyak
+            </p>
+            <p class="text-center font-calibri text-footer">
+              tanpa persetujuan tertulis dari manajemen PT RIUNG MITRA LESTARI.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </table>
+
+    <!-- Header PDF -->
+    <br clear="all">
+    <table style="width: 100%;" class="table-ttd">
+      <tr>
+        <th rowspan="4" class="border-black">
+          <img
+          style="width: 100px;"
+          src="https://officeless-files-1jrxrmbq.s3.ap-southeast-3.amazonaws.com/230/660517b583e0d-Logo-Riung.png"
+          alt="Logo Riung"
+        />
+        </th>
+        <th colspan="3" class="border-black font-calibri bg-header">PT RIUNG MITRA LESTARI</th>
+      </tr>
+      <tr>
+        <th rowspan="4" class="border-black font-calibri">PROSEDUR</th>
+        <td class="border-black font-calibri">No. Dok</td>
+        <td class="border-black font-calibri text-abu">SOP-CSD-001</td>
+      </tr>
+      <tr>
+        <td class="border-black font-calibri">Revisi</td>
+        <td class="border-black font-calibri text-abu">01</td>
+      </tr>
+      <tr>
+        <td class="border-black font-calibri">Tanggal</td>
+        <td class="border-black font-calibri text-abu">26 November 2023</td>
+      </tr>
+      <tr>
+        <th class="border-black font-calibri text-abu">THREE YEAR STRATEGY</th>
+        <td class="border-black font-calibri">Halaman</td>
+        <td class="border-black font-calibri text-abu">1</td>
+      </tr>
+    </table>
+
+    <!-- Table Content Header -->
+    <table style="margin-top: 10px; width: 100%">
+          <tr>
+            <td class="header-content">1. TUJUAN</td>
+          </tr>
+          <tr>
+            <td class="text-base">Standard Operation Procedure (SOP) ini digunakan untuk: </td>
+          </tr>
+    </table>
+
+    /* 
+    <!-- Table Content Numbered List is_have_children = true -->
+    <table style="width: 100%">
+        <tr>
+          <td style="font-weight: bold; font-size: 15px" class="text-base align-top">1.1</td> 
+          <td class="text-base">Memastikan adanya rincian three year strategy secara perusahaan dan Jobsite.</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; font-size: 15px; padding-left: 20px" class="text-base align-top">1.1.1</td>
+          <td class="text-base">Memastikan adanya rincian three year strategy secara perusahaan dan Jobsite.</td>
+        </tr>
+    </table>
+    */
+
+    <!-- Table Content Bullet List-->
+    <!-- <table style="width: 100%">
+      <tr>
+        <li class="text-base">Tracktor (Bulleted List)</li>
+      </tr>
+    </table> -->
+
+    <!-- Table Attachment -->
+    <!-- <table style="width: 100%">
+      <tr>
+        <img style="width: 660px" src="https://jojo-receipt-new.s3.ap-southeast-1.amazonaws.com/23946/6633174286921-Table-Import-Yoda.png" alt="Attachment">
+      </tr>
+    </table> -->
+
+    <!-- Attachment -->
+    <!-- <table style="width: 100%">
+      <tr>
+        <td>Diagram Alur -</td>
+        <td>Diagram Alur</td>
+      </tr>
+      <tr>
+        <td>
+          <img style="width: 660px; height: 600px" src="https://jojo-receipt-new.s3.ap-southeast-1.amazonaws.com/23946/6633174286921-Table-Import-Yoda.png" alt="Attachment">
+        </td>
+      </tr>
+    </table> -->
+  </body>
+</html>

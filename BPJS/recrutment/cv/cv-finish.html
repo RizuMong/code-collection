@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Rekrutmen</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0;
+    }
+
+    th,
+    td {
+      /* border: 1px solid #000; */
+      padding: 4px;
+      text-align: left;
+      font-size: 10.5px;
+    }
+
+    @page page-content {
+      margin: 0;
+      padding: 0;
+
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      odd-header-name: html_Header;
+      odd-footer-name: _blank;
+    }
+
+    @page chapter2 {
+      margin: 0;
+      padding: 0;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      odd-header-name: html_MyHeader2;
+      odd-footer-name: _blank;
+    }
+
+    div.page-content {
+      page: page-content;
+
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    div.chapter2 {
+      page: chapter2;
+      page-break-before: always;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    .header {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-top: -34px;
+    }
+
+    .footer {
+      width: 100%;
+      height: auto;
+      margin-bottom: -34px;
+    }
+
+    .no-border-table {
+      border-collapse: collapse;
+      border: none;
+      width: 100%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-4 {
+      margin-bottom: 30px;
+    }
+
+    .mt-4 {
+      margin-top: 30px;
+    }
+
+    .mb-3 {
+      margin-bottom: 20px;
+    }
+
+    .mb-2 {
+      margin-bottom: 12px;
+    }
+
+    .mt-3 {
+      margin-top: 20px;
+    }
+
+    .mt-2 {
+      margin-top: 12px;
+    }
+
+    .mt-1 {
+      margin-top: 6px;
+    }
+
+    .text-base {
+      font-size: 12px;
+    }
+
+    .text-sm {
+      font-size: 10.5px;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+
+    .custom-table {
+      padding: 4px !important;
+    }
+
+    .custom-table th,
+    .custom-table td {
+      padding: 4px !important;
+    }
+  </style>
+
+  <body>
+    <!-- Header -->
+    <htmlpageheader name="Header">
+      <div class="header mb-4">
+        <h5>REKRUTMEN BPJAMSOSTEK</h5>
+      </div>
+    </htmlpageheader>
+
+    <!-- Content -->
+    <div class="page-content">
+      <!-- Informasi Pribadi -->
+      <div>
+        <h4>1. Informasi Pribadi</h4>
+        <table>
+          <tr>
+            <th style="width: 40%">No. KTP</th>
+            <th style="width: 40%">Nama Lengkap</th>
+            <th style="width: 10%" class="text-center" rowspan="10">
+              <!-- src="http://officeless-bpjs-prod-public.oss-ap-southeast-5.aliyuncs.com/27414/68086d2b81aec-Screenshot_395.png" -->
+              <img
+                src="var_foto_profile"
+                alt="Foto Profile"
+                width="200"
+                height="250"
+              />
+            </th>
+          </tr>
+          <tr>
+            <td>var_no_ktp</td>
+            <td>var_nama_lengkap</td>
+          </tr>
+          <tr>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
+          </tr>
+          <tr>
+            <td>var_tempat_lahir</td>
+            <td>var_tanggal_lahir</td>
+          </tr>
+          <tr>
+            <th>Jenis Kelamin</th>
+            <th>Agama</th>
+          </tr>
+          <tr>
+            <td>var_jenis_kelamin</td>
+            <td>var_agama</td>
+          </tr>
+          <tr>
+            <th>Status Perkawinan</th>
+            <th>Tinggi Badan</th>
+          </tr>
+          <tr>
+            <td>var_status_perkawinan</td>
+            <td>var_tinggi_badan</td>
+          </tr>
+          <tr>
+            <th>Berat Badan</th>
+          </tr>
+          <tr>
+            <td>var_berat_badan</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Alamat -->
+      <div>
+        <h4>2. Alamat</h4>
+        <table>
+          <tr>
+            <th>Alamat KTP</th>
+          </tr>
+          <tr>
+            <td>var_alamat_ktp</td>
+          </tr>
+          <tr>
+            <th>Alamat Domisili</th>
+          </tr>
+          <tr>
+            <td>var_alamat_domisili</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Kontak -->
+      <div>
+        <h4>3. Kontak</h4>
+        <table>
+          <tr>
+            <th style="width: 50%">Handphone</th>
+            <th style="width: 50%">Handphone Lainnya</th>
+          </tr>
+          <tr>
+            <td>var_handphone_1</td>
+            <td>var_handphone_2</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <th>Telepon</th>
+          </tr>
+          <tr>
+            <td>var_email</td>
+            <td>var_telepon</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pendidikan -->
+      <div>
+        <h4>4. Pendidikan</h4>
+        <table>
+          <tr>
+            <th style="width: 50%">Jenjang</th>
+            <th style="width: 50%">IPK</th>
+          </tr>
+          <tr>
+            <td>var_jenjang</td>
+            <td>var_ipk</td>
+          </tr>
+          <tr>
+            <th>Nomor Seri Ijazah</th>
+            <th>Akreditasi</th>
+          </tr>
+          <tr>
+            <td>var_nomor_seri_ijazah</td>
+            <td>var_akreditasi</td>
+          </tr>
+          <tr>
+            <th colspan="2">Nama Institusi Pendidikan</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_nama_institusi_pendidikan</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jurusan/Program Studi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jurusan_program_studi</td>
+          </tr>
+          <tr>
+            <th colspan="2">Alamat</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_alamat_pendidikan</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th style="width: 33%">Tahun Pendidikan</th>
+            <th style="width: 33%">Status Lulus</th>
+            <th style="width: 33%">Telepon Institusi Pendidikan</th>
+          </tr>
+          <tr>
+            <td>var_tahun_pendidikan</td>
+            <td>var_status_lulus_pendidikan</td>
+            <td>var_telepon_institusi_pendidikan_1</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pendidikan Lainnya -->
+      <div>
+        <h4>5. Pendidikan Lainnya</h4>
+        <table>
+          <tr>
+            <th style="width: 50%">Jenjang</th>
+            <th style="width: 50%">IPK</th>
+          </tr>
+          <tr>
+            <td>var_jenjang_pendidikan_2</td>
+            <td>var_ipk_pendidikan_2</td>
+          </tr>
+          <tr>
+            <th>Nomor Seri Ijazah</th>
+            <th>Akreditasi</th>
+          </tr>
+          <tr>
+            <td>var_nomor_seri_ijazah_pendidikan_2</td>
+            <td>var_akreditasi_pendidikan_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Nama Institusi Pendidikan</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_nama_institusi_pendidikan_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jurusan/Program Studi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jurusan_program_studi_pendidikan_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Alamat</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_alamat_pendidikan_2</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th style="width: 33%">Tahun Pendidikan</th>
+            <th style="width: 33%">Status Lulus</th>
+            <th style="width: 33%">Telepon Institusi Pendidikan</th>
+          </tr>
+          <tr>
+            <td>var_tahun_pendidikan_2</td>
+            <td>var_status_lulus_pendidikan_2</td>
+            <td>var_telepon_institusi_pendidikan_2</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Sertifikasi Pelatihan -->
+      <div>
+        <h4>6. Sertifikasi Pelatihan</h4>
+        <table>
+          <tr>
+            <th colspan="2">Nama Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_nama_pelatihan_sertifikasi_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Lembaga Penyelengara Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              var_lembaga_penyelenggara_pelatihan_sertifikasi_1
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">Bidang Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_bidang_pelatihan_sertifikasi_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Alamat Lembaga</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_alamat_lembaga_1</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Tahun Sertifikasi</th>
+            <th style="width: 50%">Telepon Lembaga</th>
+          </tr>
+          <tr>
+            <td>var_tahun_sertifikasi_1</td>
+            <td>var_telepon_lembaga_1</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Sertifikasi Lainnya -->
+      <div>
+        <h4>7. Sertifikasi Lainnya</h4>
+        <table>
+          <tr>
+            <th colspan="2">Nama Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_nama_pelatihan_sertifikasi_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Lembaga Penyelengara Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              var_lembaga_penyelenggara_pelatihan_sertifikasi_2
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">Bidang Pelatihan/Sertifikasi</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_bidang_pelatihan_sertifikasi_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Alamat Lembaga</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_alamat_lembaga_2</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Tahun Sertifikai</th>
+            <th style="width: 50%">Telepon Lembaga</th>
+          </tr>
+          <tr>
+            <td>var_tahun_sertifikasi_2</td>
+            <td>var_telepon_lembaga_2</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Bahasa Asing yang dikuasai -->
+      <div>
+        <h4>8. Bahasa Asing yang dikuasai</h4>
+        <table>
+          <tr>
+            <th colspan="4" style="width: 100%">Bahasa 1</th>
+          </tr>
+          <tr>
+            <td colspan="4">var_bahasa_1</td>
+          </tr>
+          <tr>
+            <th style="width: 25%">Lisan</th>
+            <th style="width: 25%">Tulisan</th>
+            <th style="width: 25%">Membaca</th>
+            <th style="width: 25%">Mendengar</th>
+          </tr>
+          <tr>
+            <td>var_lisan_1</td>
+            <td>var_tulisan_1</td>
+            <td>var_membaca_1</td>
+            <td>var_mendengar_1</td>
+          </tr>
+          <tr>
+            <th colspan="4" style="width: 100%">Bahasa 2</th>
+          </tr>
+          <tr>
+            <td colspan="4">var_bahasa_2</td>
+          </tr>
+          <tr>
+            <th style="width: 25%">Lisan</th>
+            <th style="width: 25%">Tulisan</th>
+            <th style="width: 25%">Membaca</th>
+            <th style="width: 25%">Mendengar</th>
+          </tr>
+          <tr>
+            <td>var_lisan_2</td>
+            <td>var_tulisan_2</td>
+            <td>var_membaca_2</td>
+            <td>var_mendengar_2</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- TOEFL/IELTS -->
+      <div>
+        <h4>9. TOEFL/IELTS</h4>
+        <p class="text-base">var_toefl_ielts</p>
+      </div>
+
+      <!-- Pengalaman Organisasi -->
+      <div>
+        <h4>10. Pengalaman Organisasi</h4>
+        <table>
+          <tr>
+            <th>Nama Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_nama_organisasi_1</td>
+          </tr>
+          <tr>
+            <th>Bidang Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_bidang_organisasi_1</td>
+          </tr>
+          <tr>
+            <th>Jabatan</th>
+          </tr>
+          <tr>
+            <td>var_jabatan_organisasi_1</td>
+          </tr>
+          <tr>
+            <th>Periode Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_periode_organisasi_1</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pengalaman Lainnya -->
+      <div>
+        <h4>11. Pengalaman Lainnya</h4>
+        <table>
+          <tr>
+            <th>Nama Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_nama_organisasi_2</td>
+          </tr>
+          <tr>
+            <th>Bidang Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_bidang_organisasi_2</td>
+          </tr>
+          <tr>
+            <th>Jabatan</th>
+          </tr>
+          <tr>
+            <td>var_jabatan_organisasi_2</td>
+          </tr>
+          <tr>
+            <th>Periode Organisasi</th>
+          </tr>
+          <tr>
+            <td>var_periode_organisasi_2</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Data Keluarga -->
+      <div>
+        <h4>12. Data Keluarga</h4>
+        <table>
+          <tr>
+            <th colspan="2">Nomor Kartu Keluarga</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_nomor_kartu_keluarga</td>
+          </tr>
+          <!-- Ayah -->
+          <tr>
+            <th style="width: 50%">Nama Ayah</th>
+            <th style="width: 50%">Tanggal Lahir Ayah</th>
+          </tr>
+          <tr>
+            <td>var_nama_ayah</td>
+            <td>var_tanggal_lahir_ayah</td>
+          </tr>
+          <tr>
+            <th colspan="2">Pekerjaan Ayah</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_pekerjaan_ayah</td>
+          </tr>
+          <!-- Ibu -->
+          <tr>
+            <th style="width: 50%">Nama Ibu</th>
+            <th style="width: 50%">Tanggal Lahir Ibu</th>
+          </tr>
+          <tr>
+            <td>var_nama_ibu</td>
+            <td>var_tanggal_lahir_ibu</td>
+          </tr>
+          <tr>
+            <th colspan="2">Pekerjaan Ibu</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_pekerjaan_ibu</td>
+          </tr>
+          <!-- Saudara -->
+          <tr>
+            <th style="width: 50%">Nama Saudara kandung 1</th>
+            <th style="width: 50%">Tanggal Saudara kandung 1</th>
+          </tr>
+          <tr>
+            <td>var_nama_saudara_kandung_1</td>
+            <td>var_tanggal_saudara_kandung_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jenis Kelamin Saudara kandung 1</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jenis_kelamin_saudara_kandung_1</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Pekerjaan Saudara kandung 1</th>
+            <th style="width: 50%">Instansi Pekerjaan Saudara kandung 1</th>
+          </tr>
+          <tr>
+            <td>var_pekerjaan_saudara_kandung_1</td>
+            <td>var_instansi_pekerjaan_saudara_kandung_1</td>
+          </tr>
+          <!-- Saudara 2 -->
+          <tr>
+            <th style="width: 50%">Nama Saudara kandung 2</th>
+            <th style="width: 50%">Tanggal Saudara kandung 2</th>
+          </tr>
+          <tr>
+            <td>var_nama_saudara_kandung_2</td>
+            <td>var_tanggal_saudara_kandung_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jenis Kelamin Saudara kandung 2</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jenis_kelamin_saudara_kandung_2</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Pekerjaan Saudara kandung 2</th>
+            <th style="width: 50%">Instansi Pekerjaan Saudara kandung 2</th>
+          </tr>
+          <tr>
+            <td>var_pekerjaan_saudara_kandung_2</td>
+            <td>var_instansi_pekerjaan_saudara_kandung_2</td>
+          </tr>
+          <!-- Saudara 3 -->
+          <tr>
+            <th style="width: 50%">Nama Saudara kandung 3</th>
+            <th style="width: 50%">Tanggal Saudara kandung 3</th>
+          </tr>
+          <tr>
+            <td>var_nama_saudara_kandung_3</td>
+            <td>var_tanggal_saudara_kandung_3</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jenis Kelamin Saudara kandung 3</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jenis_kelamin_saudara_kandung_3</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Pekerjaan Saudara kandung 3</th>
+            <th style="width: 50%">Instansi Pekerjaan Saudara kandung 3</th>
+          </tr>
+          <tr>
+            <td>var_pekerjaan_saudara_kandung_3</td>
+            <td>var_instansi_pekerjaan_saudara_kandung_3</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Data Kerabat -->
+      <div>
+        <h4>13. Data Kerabat</h4>
+        <p class="text-base">var_keterangan_kerabat</p>
+        <table>
+          <!-- Kerabat 1 -->
+          <tr>
+            <th style="width: 50%">Nama Kerabat 1</th>
+            <th style="width: 50%">Tanggal Lahir Kerabat 1</th>
+          </tr>
+          <tr>
+            <td>var_nama_kerabat_1</td>
+            <td>var_tanggal_lahir_kerabat_1</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Jenis Kelamin Kerabat 1</th>
+            <th style="width: 50%">Hubungan Kerabat 1</th>
+          </tr>
+          <tr>
+            <td>var_jenis_kelamin_kerabat_1</td>
+            <td>var_hubungan_kerabat_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Unit Kerabat 1</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_unit_kerabat_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jobtitle Kerabat 1</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jobtitle_kerabat_1</td>
+          </tr>
+          <!-- Kerabat 2 -->
+          <tr>
+            <th style="width: 50%">Nama Kerabat 2</th>
+            <th style="width: 50%">Tanggal Lahir Kerabat 2</th>
+          </tr>
+          <tr>
+            <td>var_nama_kerabat_2</td>
+            <td>var_tanggal_lahir_kerabat_2</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Jenis Kelamin Kerabat 2</th>
+            <th style="width: 50%">Hubungan Kerabat 2</th>
+          </tr>
+          <tr>
+            <td>var_jenis_kelamin_kerabat_2</td>
+            <td>var_hubungan_kerabat_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Unit Kerabat 2</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_unit_kerabat_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jobtitle Kerabat 2</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jobtitle_kerabat_2</td>
+          </tr>
+          <!-- Kerabat 3 -->
+          <tr>
+            <th style="width: 50%">Nama Kerabat 3</th>
+            <th style="width: 50%">Tanggal Lahir Kerabat 3</th>
+          </tr>
+          <tr>
+            <td>var_nama_kerabat_3</td>
+            <td>var_tanggal_lahir_kerabat_3</td>
+          </tr>
+          <tr>
+            <th style="width: 50%">Jenis Kelamin Kerabat 3</th>
+            <th style="width: 50%">Hubungan Kerabat 3</th>
+          </tr>
+          <tr>
+            <td>var_jenis_kelamin_kerabat_3</td>
+            <td>var_hubungan_kerabat_3</td>
+          </tr>
+          <tr>
+            <th colspan="2">Unit Kerabat 3</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_unit_kerabat_3</td>
+          </tr>
+          <tr>
+            <th colspan="2">Jobtitle Kerabat 3</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_jobtitle_kerabat_3</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pengalaman Kerja -->
+      <div>
+        <h4>14. Pengalaman Kerja</h4>
+        <table>
+          <tr>
+            <th colspan="3">Nama Perusahaan</th>
+          </tr>
+          <tr>
+            <td colspan="3">var_nama_perusahaan_1</td>
+          </tr>
+          <tr>
+            <th style="width: 33%">Jenis Perusahaan</th>
+            <th style="width: 33%">Jumlah Kantor Cabang</th>
+            <th style="width: 33%">Jumlah Karyawan</th>
+          </tr>
+          <tr>
+            <td>var_jenis_perusahaan_1</td>
+            <td>var_jumlah_kantor_cabang_1</td>
+            <td>var_jumlah_karyawan_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Bidang Perusahaan</th>
+            <th>Jumlah Kantor Cabang</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_bidang_perusahaan_1</td>
+            <td>var_jumlah_kantor_cabang_1</td>
+          </tr>
+          <tr>
+            <th>Jabatan Awal</th>
+            <th colspan="2">Jabatan Akhir</th>
+          </tr>
+          <tr>
+            <td>var_jabatan_awal_1</td>
+            <td colspan="2">var_jabatan_akhir_1</td>
+          </tr>
+          <tr>
+            <th colspan="2">Uraian Jabatan</th>
+            <th>Gaji Teakhir</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_uraian_jabatan_1</td>
+            <td>var_gaji_terakhir_1</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pengalaman Kerja Lainnya -->
+      <div>
+        <h4>15. Pengalaman Kerja Lainnya</h4>
+        <table>
+          <tr>
+            <th colspan="3">Nama Perusahaan</th>
+          </tr>
+          <tr>
+            <td colspan="3">var_nama_perusahaan_2</td>
+          </tr>
+          <tr>
+            <th style="width: 33%">Jenis Perusahaan</th>
+            <th style="width: 33%">Jumlah Kantor Cabang</th>
+            <th style="width: 33%">Jumlah Karyawan</th>
+          </tr>
+          <tr>
+            <td>var_jenis_perusahaan_2</td>
+            <td>var_jumlah_kantor_cabang_2</td>
+            <td>var_jumlah_karyawan_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Bidang Perusahaan</th>
+            <th>Jumlah Kantor Cabang</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_bidang_perusahaan_2</td>
+            <td>var_jumlah_kantor_cabang_2</td>
+          </tr>
+          <tr>
+            <th>Jabatan Awal</th>
+            <th colspan="2">Jabatan Akhir</th>
+          </tr>
+          <tr>
+            <td>var_jabatan_awal_2</td>
+            <td colspan="2">var_jabatan_akhir_2</td>
+          </tr>
+          <tr>
+            <th colspan="2">Uraian Jabatan</th>
+            <th>Gaji Teakhir</th>
+          </tr>
+          <tr>
+            <td colspan="2">var_uraian_jabatan_2</td>
+            <td>var_gaji_terakhir_2</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="chapter2">
+      <div class="header mb-2">
+        <h5>SURAT PERNYATAAN</h5>
+      </div>
+      <div>
+        <p class="text-sm">Saya yang bertanda tangan di bawah ini :</p>
+        <table>
+          <tr>
+            <td style="width: 25%">Nama Lengkap</td>
+            <td style="width: 75%">: var_nama_lengkap</td>
+          </tr>
+          <tr>
+            <td style="width: 25%">Nomor Registrasi</td>
+            <td style="width: 75%">: var_nomor_registrasi</td>
+          </tr>
+          <tr>
+            <td style="width: 25%">Nomor KTP/Identitas diri</td>
+            <td style="width: 75%">: var_no_ktp</td>
+          </tr>
+          <tr>
+            <td style="width: 25%">Tempat/Tgl. Lahir</td>
+            <td style="width: 75%">: var_tempat_lahir/var_tanggal_lahir</td>
+          </tr>
+          <tr>
+            <td style="width: 25%">Sourching Channel</td>
+            <td style="width: 75%">: var_sourcing_channel</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p class="text-sm">Dengan ini saya menyatakan yang sebenarnya :</p>
+        <table class="custom-table">
+          <tr>
+            <td style="width: 5%">1.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa bersedia mematuhi semua ketentuan yang berlaku di BPJS
+              Ketenagakerjaan.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">2.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa bersedia ditempatkan pada Job Title dan Unit Kerja BPJS
+              Ketenagakerjaan di seluruh Indonesia sesuai dengan penetapan BPJS
+              Ketenagakerjaan, serta tidak akan mengajukan permohonan pindah
+              karena kepentingan pribadi/keluarga.
+            </td>
+          </tr>
+
+          <tr>
+            <td style="width: 5%">3.</td>
+            <td class="justify" style="width: 95%">
+              Bersedia menjalani masa ikatan kerja selama 2 (dua) tahun pertama
+              masa kerja sejak diangkat sebagai Calon Karyawan.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">4.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa benar saya belum pernah menikah dan atau terikat pada suatu
+              perkawinan, serta bersedia untuk tidak menikah selama 1 (satu)
+              tahun pertama masa kerja sejak diangkat sebagai Calon Karyawan.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">5.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa benar saya bukan merupakan Anak Kandung / Angkat, dan atau
+              Saudara Kandung / Ipar dari Karyawan Aktif BPJS Ketenagakerjaan.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">6.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya tidak akan menuntut penyesuaian golongan yang
+              disebabkan oleh Ijazah yang saya miliki lebih tinggi dari standar
+              pendidikan pada job title yang saya apply pada saat job opening.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">7.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya tidak akan menuntut penyesuaian golongan karena ijazah
+              yang saya miliki, apabila dikemudian hari setelah menjadi Karyawan
+              BPJS Ketenagakerjaan saya menyelesaikan jenjang pendidikan yang
+              lebih tinggi dari jenjang pendidikan yang digunakan pada saat
+              melamar.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">8.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya bersedia menyerahkan Ijazah asli kepada BPJS
+              Ketenagakerjaan untuk disimpan selama 2 (dua) tahun dalam masa
+              ikatan kerja.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">9.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya bersedia untuk patuh dan tunduk kepada Peraturan
+              Direksi BPJS Ketenagakerjaan terkait manajemen kepegawaian yang di
+              dalamnya termasuk ketentuan mengenai pensiun di usia 36 tahun bagi
+              job title dengan persyaratan pendidikan minimal D3 dan usia 57
+              tahun bagi job title dengan persyaratan pendidikan minimal S1 dan
+              S2.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">10.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya bersedia mengganti biaya rekrutmen dan seleksi yang
+              telah dikeluarkan oleh BPJS Ketenagakerjaan sejumlah 75 (tujuh
+              puluh lima) juta rupiah bila mengundurkan diri dan atau dianggap
+              mengundurkan diri karena mangkir pada saat menjadi Calon Karyawan
+              maupun dalam 2 (dua) tahun masa ikatan kerja.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">11.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa saya akan menerima semua keputusan BPJS Ketenagakerjaan dan
+              tidak akan melakukan tuntutan apapun apabila dinyatakan tidak
+              memenuhi kriteria untuk dapat lolos pada masing-masing tahap
+              seleksi.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">12.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa seluruh keterangan dari pernyataan dan/atau informasi yang
+              saya berikan kepada BPJS Ketenagakerjaan adalah benar. Apabila
+              dikemudian hari pernyataan dan/atau informasi yang saya sampaikan
+              terbukti tidak benar, Saya bersedia dijatuhi sanksi sesuai dengan
+              ketentuan yang berlaku dan/atau bersedia diberhentikan sebagai
+              Calon Karyawan BPJS Ketenagakerjaan maupun dikemudian hari setelah
+              menjadi Karyawan BPJS Ketenagakerjaan.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">13.</td>
+            <td class="justify" style="width: 95%">
+              Bahwa benar saya tidak sedang dan tidak pernah menjalani proses
+              pidana dengan ancaman hukuman lima tahun atau lebih.
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 5%">14.</td>
+            <td class="justify" style="width: 95%">
+              Bersedia melaksanakan dengan sebaik-baiknya Pedoman Tata Kelola,
+              Pedoman Kode Etik, Pedoman Penanganan Benturan Kepentingan,
+              Pedoman Sistem Manajemen Anti Penyuapan, Pedoman Pengendalian
+              Gratifikasi, serta Kebijakan Tata Kelola Badan lainnya, demi
+              tercapainya Tata Kelola Yang Baik.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p class="text-sm justify">
+          Demikian pernyataan ini Saya buat dengan sebenar-benarnya, dalam
+          keadaan sadar tanpa adanya paksaan dari pihak manapun.
+          var_kabupaten_domisili, var_created_at
+        </p>
+      </div>
+      <div class="mt-2">
+        <img
+          src="http://officeless-bpjs-prod-public.oss-ap-southeast-5.aliyuncs.com/27414/680897f3509a3-Screenshot_396.png"
+          alt="Materai 10K"
+          width="90"
+        />
+        <p class="text-sm">(var_nama_lengkap)</p>
+      </div>
+      <div class="mt-1">
+        <p class="text-sm">Keterangan</p>
+        <p class="text-sm justify">
+          - Surat Pernyataan ini agar dipelajari dan diisi sesuai petunjuk.
+        </p>
+        <p class="text-sm justify">
+          - Setelah diisi lengkap Surat Pernyataan ini agar ditandatangani
+          diatas meterai Rp. 10000,-
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

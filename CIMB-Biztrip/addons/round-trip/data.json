@@ -1,0 +1,66 @@
+{
+  "contactDetail": {
+      "customerEmail": "SUBANDI@mailinator.com",
+      "customerPhoneNumber": "89764528144",
+      "customerPhoneNumberCountryCode": "+62",
+      "email": "SUBANDI@mailinator.com",
+      "firstName": "Subandi",
+      "lastName": "Subandi",
+      "phoneNumber": "89764528144",
+      "phoneNumberCountryCode": "+62"
+  },
+  "customerLoginID": "subandi@mailinator.com",
+  "customerLoginType": "EMAIL",
+  "flightIds": [
+      "FLIGHT_ID_V2_5MnCz-KLUv/QBYAQQAAXE32+HG5ZLjL0jiXxsevuHa8Ji5mP+c+f/NDn1S7BDldL+Lble1rmQKT8Sb3gmM65vp/y2BqFkstzSkADDhJ7ZCuJZ96586tiEEKwZVNi3ketLfNe2zpyOJFBP10PL949ZD0LkAo7OelU6I9xzhi0ef6/Cj41Xf/he+VLnQW1k=-KLUv/QBYgQUAe//3fFNGbuTxNLD7T9Ldb7u9hY7WLqKZxPRhw0aUZRFLoo3Af//6Z9qX4uRbPs7yUHRDOCRLJ8itSw1kZE417hkYc+glZftH0Mx0AhBC94FRQa4VVSKTaz9PAPNZAUT1o5FityTGGHKiq/o2B5uCqP0z4Xbn3nSvnFwZ+Y2aJ8HBXj5/nK42Kxv0rEFTFCXV0FqjhTMuwtrOZPtVhDv8J3hqobRrcZF/OFTkZIQLbYQ=",
+      "FLIGHT_ID_V2_5MnCz-KLUv/QBYAQQAA12hcECbbp6/QtD2ujhlQRH/8RK2ttAu7q9bPge/+yxcquFvRfjSOu3G9831yvr01zf/Ix5do+Fs+IOiuj6iVo5o+9lIh2kYoSn0O48FLrhhEM/6tIgmUK6tA7UG4FNt5BKckClndbDtu7oeB2EE4kef6/Cj41Xf/he+VLnQW1k=-KLUv/QBYgQUAdO2x5Z3QwdMqKddkPLH7bKTrmcfTTV3xqQtBj8yVwF1+QgDEK5jglE8T/0HqUdjrhi1s5/zyzfffVCJnwAjZk5WF8HtRK/WCUQt+IpQRkbJRQa4VVSKTaz9PAPNZAUT1o5FityTGGHKiq/o2B5uCqP0z4Xbn3nSvnFwZ+Y2aJ8HBXj5/nK42Kxv0rEFTFCXVcZ3yssA4zmU7qi1ia5WLmnhqobRrcZF/OFTkZIQLbYQ="
+  ],
+  "journeyType": "BASIC_RT",
+  "locale": "id_ID",
+  "loginID": "subandi@mailinator.com",
+  "loginType": "EMAIL",
+  "passengers": {
+      "adults": [
+          {
+              "addOns": [
+                  {
+                      "availableAddOnsOptions": {
+                          "baggageOptions": [
+                              {
+                                  "baggageQuantity": "1",
+                                  "baggageType": "KG",
+                                  "baggageWeight": "60",
+                                  "id": "5",
+                                  "marketingAirline": "IP",
+                                  "priceWithCurrency": {
+                                      "amount": "427000",
+                                      "currency": "IDR"
+                                  }
+                              }
+                          ],
+                          "mealOptions": []
+                      },
+                      "segmentsWithAvailableAddOns": []
+                  }
+              ],
+              "birthLocation": "Jakarta",
+              "dateOfBirth": "08-20-1988",
+              "documentDetail": {
+                  "documentNo": "",
+                  "documentType": "PASSPORT",
+                  "expirationDate": "",
+                  "issuanceDate": "",
+                  "issuingCountry": "ID"
+              },
+              "firstName": "Subandi",
+              "gender": "M",
+              "lastName": "Subandi",
+              "nationality": "ID",
+              "title": "MR"
+          }
+      ],
+      "children": [],
+      "infants": []
+  },
+  "username": null
+}

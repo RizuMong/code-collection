@@ -1,0 +1,270 @@
+function _dateFormat(timestamp) {
+  if (!timestamp) {
+      return "";
+  }
+  var date = new Date(timestamp);
+  var months = [
+      "Januari",
+      "Februari",
+      "Maret",
+      "April",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
+  ];
+  var formatted_date =
+      date.getDate() +
+      " " +
+      months[date.getMonth()] +
+      " " +
+      date.getFullYear() +
+      " " +
+      new Date().getHours() +
+      ":" +
+      new Date().getMinutes();
+  return formatted_date;
+}
+
+function _numberToString(data) {
+  if (data !== null && data !== undefined) {
+      return data.toString();
+  } else {
+      return "";
+  }
+}
+
+//  ======== Setup Data Buat CSV ===========
+var nameFile = "Export Revisi Cancel" + _dateFormat(Date.now());
+var extension = "csv";
+var path = "export-data/invoice/revisi-cancel";
+var fullPath = path + "/" + nameFile + ".csv";
+
+var reportFinish = Date.now();
+var reportFinishText = _dateFormat(Date.now());
+
+var datas = [];
+
+if (getAllData.length > 0) {
+for (var i = 0; i < getAllData.length; i++) {
+  var item = getAllData[i];
+
+  var data = {
+    "BRANCH ID": item.branch_id ? item.branch_id.name || "--" : "--",
+    "INVOICE NUMBER": item.invoice_number || "--",
+    "INVOICE DATE": _dateFormat(item.invoice_date) || "--",
+    "FROM CONNOTE DATE": _dateFormat(item.from_connote_date) || "--",
+    "TO CONNOTE DATE": _dateFormat(item.to_connote_date) || "--",
+    "INVOICING METHOD": item.invoicing_method ? item.invoicing_method.name || "--" : "--",
+    "INVOICING TYPE": item.invoicing_type ? item.invoicing_type.name || "--" : "--",
+    "TRANSACTION TYPE": item.transaction_type ? item.transaction_type.name || "--" : "--",
+    "DESCRIPTION": item.description || "--",
+    "BRANCH TYPE": item.branch_type ? item.branch_type.name || "--" : "--",
+    "NA PRINCIPAL": item.na_principal ? item.na_principal.name || "--" : "--",
+    "BRANCH NAME": item.branch_name ? item.branch_name.name || "--" : "--",
+    "SITE ID": item.site_id ? item.site_id.name || "--" : "--",
+    "SITE NAME": item.site_name ? item.site_name.name || "--" : "--",
+    "CUSTOMER TYPE": item.customer_type ? item.customer_type.name || "--" : "--",
+    "CUSTOMER TYPE NAME": item.customer_type_name ? item.customer_type_name.name || "--" : "--",
+    "NATIONAL PARENT ID": item.national_parent_id ? item.national_parent_id.name || "--" : "--",
+    "NATIONAL PARENT NAME": item.national_parent_name ? item.national_parent_name.name || "--" : "--",
+    "LOCAL PARENT ID": item.local_parent_id ? item.local_parent_id.name || "--" : "--",
+    "LOCAL PARENT NAME": item.local_parent_name ? item.local_parent_name.name || "--" : "--",
+    "CUSTOMER ID": item.customer_id ? item.customer_id.name || "--" : "--",
+    "CUSTOMER NAME": item.customer_name ? item.customer_name.name || "--" : "--",
+    "NPWP ID": _numberToString(item.npwp_id) || "--",
+    "NPWP NAME": item.npwp_name || "--",
+    "TERMS OF PAYMENT": item.term_of_payment ? item.term_of_payment.name || "--" : "--",
+    "DUE DATE": _dateFormat(item.due_date) || "--",
+    "GOODS VALUE": _numberToString(item.goods_value) || "--",
+    "COD AMOUNT": _numberToString(item.cod_amount) || "--",
+    "TOTAL COD FEE AMOUNT (DPP)": _numberToString(item.total_cod_fee_amount_dpp) || "--",
+    "ORIGINAL AMOUNT": _numberToString(item.original_amount) || "--",
+    "TOTAL PACKING & CHARGES": _numberToString(item.total_packing_charges) || "--",
+    "DISCOUNT AMOUNT AWB": _numberToString(item.discount_amount_awb) || "--",
+    "DISCOUNT AMOUNT INVOICE": _numberToString(item.discount_amount_invoice) || "--",
+    "TOTAL DISCOUNT": _numberToString(item.total_discount) || "--",
+    "TOTAL REWARD": _numberToString(item.total_reward) || "--",
+    "TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP)": _numberToString(item.total_amount_after_discount_charges_dpp) || "--",
+    "TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP - PLS)": _numberToString(item.total_amount_after_discount_charges_dpp_pls) || "--",
+    "VAT AMOUNT": _numberToString(item.vat_amount) || "--",
+    "ADJUSTED INSURANCE ADMIN BEFORE VAT": _numberToString(item.adjusted_insurance_admin_before_vat) || "--",
+    "ADJUSTED INSURANCE ADMIN VAT": _numberToString(item.adjusted_insurance_admin_vat) || "--",
+    "ADJUSTED INSURANCE PREMIUM": _numberToString(item.adjusted_insurance_premi) || "--",
+    "TOTAL ADJUSTED INSURANCE AMOUNT": _numberToString(item.total_adjusted_insurance_amount) || "--",
+    "COMMISSION DPP": _numberToString(item.commission_dpp) || "--",
+    "VAT AMOUNT COMMISSION": _numberToString(item.vat_amount_commission) || "--",
+    "STAMP": _numberToString(item.stamp) || "--",
+    "TOTAL PAID AMOUNT": _numberToString(item.total_paid_amount) || "--",
+    "INVOICE STATUS": item.invoice_status ? item.invoice_status.name || "--" : "--",
+    "CONNOTE - BMS STATUS": item.connote_bms_status || "--",
+    "INVOICE REVISION/CANCELLATION DATE": _dateFormat(item.invoice_revision_cancellation_date) || "--",
+    "CANCELLED/REVISED REASON": item.cancelled_revised_reason ? item.cancelled_revised_reason.name || "--" : "--",
+    "CANCELLED/REVISED ADDITIONAL NOTES": item.cancelled_revised_additional_notes || "--",
+    "(NEW) INVOICE NUMBER": item.new_invoice_number || "--",
+    "(NEW) INVOICE DATE": _dateFormat(item.new_invoice_date) || "--",
+    "(NEW) ORIGINAL AMOUNT": _numberToString(item.new_original_amount) || "--",
+    "(NEW) TOTAL PACKING & CHARGES": _numberToString(item.new_total_packing_charges) || "--",
+    "(NEW) TOTAL REWARD": _numberToString(item.new_total_reward) || "--",
+    "(NEW) DISCOUNT AMOUNT AWB": _numberToString(item.new_discount_amount_awb) || "--",
+    "(NEW) DISCOUNT AMOUNT INVOICE": _numberToString(item.new_discount_amount_invoice) || "--",
+    "(NEW) TOTAL DISCOUNT": _numberToString(item.new_total_discount) || "--",
+    "(NEW) TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP)": _numberToString(item.new_total_amount_after_discount_charges_dpp) || "--",
+    "(NEW) TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP - PLS)": _numberToString(item.new_total_amount_after_discount_charges_dpp_pls) || "--",
+    "(NEW) VAT AMOUNT": _numberToString(item.new_vat_amount) || "--",
+    "(NEW) ADJUSTED INSURANCE ADMIN BEFORE VAT": _numberToString(item.new_adjusted_insurance_admin_before_vat) || "--",
+    "(NEW) ADJUSTED INSURANCE ADMIN VAT": _numberToString(item.new_adjusted_insurance_admin_vat) || "--",
+    "(NEW) ADJUSTED INSURANCE PREMIUM": _numberToString(item.new_adjusted_insurance_premi) || "--",
+    "(NEW) TOTAL ADJUSTED INSURANCE AMOUNT": _numberToString(item.new_total_adjusted_insurance_amount) || "--",
+    "(NEW) COMMISSION DPP": _numberToString(item.new_commission_dpp) || "--",
+    "(NEW) VAT AMOUNT COMMISSION": _numberToString(item.new_vat_amount_commission) || "--",
+    "(NEW) STAMP": _numberToString(item.new_stamp) || "--",
+    "(NEW) TOTAL PAID AMOUNT": _numberToString(item.new_total_paid_amount) || "--",
+    "(NEW) INVOICE STATUS": item.new_invoice_status ? item.new_invoice_status.name || "--" : "--",
+    "INVOICING OFFICER": item.invoicing_officer ? item.invoicing_officer.name || "--" : "--",
+    "INVOICING OFFICER NAME": item.invoicing_officer_name || "--",
+    "TAX ADMINISTRATOR": item.tax_administrator ? item.tax_administrator.name || "--" : "--",
+    "TAX ADMINISTRATOR NAME": item.tax_administrator_name || "--",
+    "MESSENGER": item.messenger ? item.messenger.name || "--" : "--",
+    "MESSENGER NAME": item.messenger_name || "--",
+    "COLLECTOR": item.collector ? item.collector.name || "--" : "--",
+    "COLLECTOR NAME": item.collector_name || "--",
+    "JOURNAL BATCH NUMBER": item.journal_batch_number || "--",
+    "VOUCHER NUMBER": item.voucher_number || "--",
+    "POSTING STATUS": item.posting_status || "--",
+    "POSTING DATE": _dateFormat(item.posting_date) || "--",
+    "REVISED/CANCELLED JOURNAL BATCH NUMBER": item.revised_cancelled_journal_batch_number || "--",
+    "REVISED/CANCELLED VOUCHER NUMBER": item.revised_cancelled_voucher_number || "--",
+    "REVISED/CANCELLED POSTING STATUS": item.revised_cancelled_posting_status || "--",
+    "REVISED/CANCELLED POSTING DATE": _dateFormat(item.revised_cancelled_posting_date) || "--",
+    "REVISED/CANCELLED DATE": _dateFormat(item.revised_cancelled_date) || "--",
+    "VAT OUT": item.vat_out || "--",
+    "VAT OUT TARIFF": item.vat_out_tariff ? item.vat_out_tariff.name || "--" : "--",
+    "SALES ORG": item.sales_org || "--",
+    "CREATED INVOICE DATE & TIME": item.created_invoice_date_time ? _dateFormat(item.created_invoice_date_time) || "--" : "--"
+  };
+
+  datas.push(data);
+}
+}
+
+var headers = [
+  "INVOICE NUMBER",
+  "INVOICE DATE",
+  "FROM CONNOTE DATE",
+  "TO CONNOTE DATE",
+  "INVOICING METHOD",
+  "INVOICING TYPE",
+  "TRANSACTION TYPE",
+  "DESCRIPTION",
+  "BRANCH TYPE",
+  "NA PRINCIPAL",
+  "BRANCH ID",
+  "BRANCH ID NAME",
+  "SITE ID",
+  "SITE ID NAME",
+  "CUSTOMER TYPE",
+  "CUSTOMER TYPE NAME",
+  "NATIONAL PARENT ID",
+  "NATIONAL PARENT NAME",
+  "LOCAL PARENT ID",
+  "LOCAL PARENT NAME",
+  "CUSTOMER ID",
+  "CUSTOMER NAME",
+  "NPWP ID",
+  "NPWP NAME",
+  "TERMS OF PAYMENT",
+  "DUE DATE",
+  "GOODS VALUE",
+  "COD AMOUNT",
+  "TOTAL COD FEE AMOUNT (DPP)",
+  "ORIGINAL AMOUNT",
+  "TOTAL PACKING & CHARGES",
+  "DISCOUNT AMOUNT AWB",
+  "DISCOUNT AMOUNT INVOICE",
+  "TOTAL DISCOUNT",
+  "TOTAL REWARD",
+  "TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP)",
+  "TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP - PLS)",
+  "VAT AMOUNT",
+  "ADJUSTED INSURANCE ADMIN BEFORE VAT",
+  "ADJUSTED INSURANCE ADMIN VAT",
+  "ADJUSTED INSURANCE PREMI",
+  "TOTAL ADJUSTED INSURANCE AMOUNT",
+  "COMMISSION DPP",
+  "VAT AMOUNT COMMISSION",
+  "STAMP",
+  "TOTAL PAID AMOUNT",
+  "INVOICE STATUS",
+  "CONNOTE - BMS STATUS",
+  "INVOICE REVISION/CANCELLATION DATE",
+  "CANCELLED/REVISED REASON",
+  "CANCELLED/REVISED ADDITIONAL NOTES",
+  "(NEW) INVOICE NUMBER",
+  "(NEW) INVOICE DATE",
+  "(NEW) ORIGINAL AMOUNT",
+  "(NEW) TOTAL PACKING & CHARGES",
+  "(NEW) TOTAL REWARD",
+  "(NEW) DISCOUNT AMOUNT AWB",
+  "(NEW) DISCOUNT AMOUNT INVOICE",
+  "(NEW) TOTAL DISCOUNT",
+  "(NEW) TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP)",
+  "(NEW) TOTAL AMOUNT AFTER DISCOUNT & CHARGES (DPP - PLS)",
+  "(NEW) VAT AMOUNT",
+  "(NEW) ADJUSTED INSURANCE ADMIN BEFORE VAT",
+  "(NEW) ADJUSTED INSURANCE ADMIN VAT",
+  "(NEW) ADJUSTED INSURANCE PREMI",
+  "(NEW) TOTAL ADJUSTED INSURANCE AMOUNT",
+  "(NEW) COMMISSION DPP",
+  "(NEW) VAT AMOUNT COMMISSION",
+  "(NEW) STAMP",
+  "(NEW) TOTAL PAID AMOUNT",
+  "(NEW) INVOICE STATUS",
+  "INVOICING OFFICER",
+  "INVOICING OFFICER NAME",
+  "TAX ADMINISTRATOR",
+  "TAX ADMINISTRATOR NAME",
+  "MESSENGER",
+  "MESSENGER NAME",
+  "COLLECTOR",
+  "COLLECTOR NAME",
+  "JOURNAL BATCH NUMBER",
+  "VOUCHER NUMBER",
+  "POSTING STATUS",
+  "POSTING DATE",
+  "REVISED/CANCELLED JOURNAL BATCH NUMBER",
+  "REVISED/CANCELLED VOUCHER NUMBER",
+  "REVISED/CANCELLED POSTING STATUS",
+  "REVISED/CANCELLED POSTING DATE",
+  "TOTAL CONNOTE",
+  "VAT OUT TYPE",
+  "VAT OUT TARIFF",
+  "VAT OUT COD FEE TYPE",
+  "VAT OUT COD FEE TARIFF",
+  "CREATED INVOICE DATE & TIME",
+  "GENERATED NSFP DATE & TIME",
+  "NOMOR SERI FAKTUR PAJAK",
+  "NOMOR SERI FAKTUR PAJAK PENGGANTI",
+  "IMPORT TAX SLIP DATE",
+  "READY TO DELIVER DATE & TIME",
+  "DELIVERED TO CUSTOMER DATE & TIME",
+  "SERVICE GROUP",
+  "SERVICE TYPE",
+  "TOTAL ORIGIN",
+  "STAGING STATUS",
+  "ALLOCATION TO ORIGIN JURNAL BATCH NUMBER",
+  "ALLOCATION TO ORIGIN VOUCHER",
+  "ALLOCATION TO ORIGIN POSTING DATE",
+  "ALLOCATION TO ORIGIN POSTING STATUS",
+  "ALLOCATION TO ORIGIN STAGING STATUS",
+  "HO BALANCING JB NUMBER",
+  "HO BALANCING VOUCHER",
+  "HO BALANCING POSTING DATE",
+  "HO BALANCING POSTING STATUS",
+  "HO BALANCING STAGING STATUS",
+  "IDS",
+];

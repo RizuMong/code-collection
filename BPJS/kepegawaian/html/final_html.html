@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Preview Resume</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		@page page-content {
+			margin: 0;
+			padding: 0;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 10px 0;
+		}
+
+		th,
+		td {
+			border: 0.5px solid #000000;
+			padding: 4px;
+			text-align: left;
+			font-size: 10px;
+		}
+
+		.no-data {
+			text-align: center;
+			font-style: italic;
+			padding: 10px;
+		}
+
+		.col-1 {
+			width: 25%;
+		}
+
+		.col-2 {
+			width: 25%;
+		}
+
+		.col-3 {
+			width: 25%;
+		}
+
+		.col-4 {
+			width: 25%;
+		}
+
+		.no-border-table {
+			border-collapse: collapse;
+			border: none;
+			width: 100%;
+		}
+
+		.no-border-table th,
+		.no-border-table td {
+			border: none;
+			padding: 4px;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+
+		.small-text {
+			font-size: 8px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Profile dan Name/NPK -->
+	<table class="no-border-table">
+		<!-- <table> -->
+		<tr>
+			<th style="width: 20%">
+				<img src="http://officeless-bpjs-prod-public.oss-ap-southeast-5.aliyuncs.com/27414/6805d1f7e0711-bpjs-ketenagakerjaan-seeklogo.png"
+				 alt="Logo BPJS" width="100" />
+			</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<th></th>
+			<th style="padding-left: 134px; font-size: 14px">
+				Laporan Detil Pegawai
+			</th>
+			<th></th>
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+			<th class="small-text text-right">TANGGAL_PREVIEW</th>
+		</tr>
+		<!-- Spacing -->
+		<tr>
+			<th></th>
+		</tr>
+		<tr>
+			<td style="
+            width: 20%;
+            font-weight: bold;
+            vertical-align: bottom;
+            font-size: 10px;
+          ">
+				Nama : NAMA_LENGKAP<br /> NPK : NPK_KARYAWAN
+			</td>
+			<td></td>
+			<td class="text-right" rowspan="3">
+				<img src=FOTO_PROFILE_KARYAWAN alt="Profile" width="128" height="140" />
+			</td>
+		</tr>
+	</table>
+
+	<!-- Informasi Jabatan -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">Informasi Jabatan</td>
+		</tr>
+		<tr>
+			<td class="col-1">Status Pegawai</td>
+			<td class="col-2">: STATUS_KARYAWAN</td>
+			<td class="col-3">TMT Masuk</td>
+			<td class="col-4">: TMT_MASUK</td>
+		</tr>
+		<tr>
+			<td>Tanggal Efektif</td>
+			<td>: TANGGAL_EFEKTIF</td>
+			<td>Tanggal Berakhir</td>
+			<td>: TANGGAL_BERAKHIR</td>
+		</tr>
+		<tr>
+			<td>Jabatan</td>
+			<td colspan="3">: JABATAN_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Unit Kerja</td>
+			<td colspan="3">
+				: UNIT_KERJA_KARYAWAN
+			</td>
+		</tr>
+		<tr>
+			<td>Posisi</td>
+			<td>: POSISI_KARYAWAN</td>
+			<td>Kategori Grade</td>
+			<td>: KATEGORI_GRADE_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Grade</td>
+			<td>: GRADE</td>
+			<td>Level Jabatan</td>
+			<td>: LEVEL_JABATAN_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Golongan</td>
+			<td>: GOLONGAN_KARYAWAN</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Bidang / Group / Urusan</td>
+			<td colspan="3">
+				: BIDANG_GROUP_URUSAN_KARYAWAN
+			</td>
+		</tr>
+		<tr>
+			<td>Atasan Supervisor</td>
+			<td colspan="3">
+				: ATASAN_SPV_KARYAWAN
+			</td>
+		</tr>
+		<tr>
+			<td>Status Jabatan</td>
+			<td>: STATUS_JABATAN</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Unit Usaha</td>
+			<td>: UNIT_USAHA_KARYAWAN</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Tanggal MPP</td>
+			<td>: TANGGAL_MPP</td>
+			<td>Tanggal Pensiun</td>
+			<td>: TANGGAL_PENSIUN</td>
+		</tr>
+	</table>
+
+	<!-- Informasi Pribadi -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">Informasi Pribadi</td>
+		</tr>
+		<tr>
+			<td class="col-1">Kewarganegaraan</td>
+			<td class="col-2">: KEWARGANEGARAAN_KARYAWAN</td>
+			<td class="col-3">Nomor Induk Kependudukan (No KTP - el)</td>
+			<td class="col-4">: NOMOR_INDUK_KEPENDUDUKAN_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Tempat Lahir</td>
+			<td>: TEMPAT_LAHIR_KARYAWAN</td>
+			<td>Tanggal Lahir</td>
+			<td>: TANGGAL_LAHIR_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td>: JENIS_KELAMIN_KARYAWAN</td>
+			<td>Agama</td>
+			<td>: AGAMA_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Status Perkawinan</td>
+			<td>: STATUS_PERKAWINAN_KARYAWAN</td>
+			<td>Sapaan</td>
+			<td>: SAPAAN_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Tanggal Pernikahan</td>
+			<td>: TANGGAL_PERNIKAHAN_KARYAWAN</td>
+			<td>Email</td>
+			<td>: EMAIL_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Tempat Pernikahan</td>
+			<td>: TEMPAT_PERNIKAHAN_KARYAWAN</td>
+			<td colspan="2"></td>
+		</tr>
+	</table>
+
+	<!-- Informasi Tempat Tinggal dan Telepon -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">
+				Informasi Tempat Tinggal dan Telepon
+			</td>
+		</tr>
+		<tr>
+			<th>Tipe</th>
+			<th>Alamat</th>
+			<th>Telepon</th>
+			<th>Kota/Kabupaten</th>
+			<th>Propinsi</th>
+			<th>Negara</th>
+			<th>Kode Pos</th>
+		</tr>
+		TABLE_INFORMASI_TEMPAT_TINGGAL_DAN_TELEPON
+	</table>
+
+	<!--  Informasi Kontak Darurat -->
+	<table>
+		<tr>
+			<td colspan="9" style="font-weight: bold">
+				Informasi Kontak Darurat
+			</td>
+		</tr>
+		<thead>
+			<tr>
+				<th>Nama</th>
+				<th>Hubungan</th>
+				<th>Nomor Telepon Rumah</th>
+				<th>Nomor Telepon Lainnya</th>
+				<th>Alamat</th>
+				<th>Kota/Kabupaten</th>
+				<th>Propinsi</th>
+				<th>Negara</th>
+				<th>Kode Pos</th>
+			</tr>
+		</thead>
+		<tbody>
+			TABLE_INFORMASI_KONTAK_DARURAT
+		</tbody>
+	</table>
+
+	<!-- Informasi Keluarga dan Tanggungan -->
+	<table>
+		<tr>
+			<td colspan="6" style="font-weight: bold">
+				Informasi Keluarga dan Tanggungan
+			</td>
+		</tr>
+		<tr>
+			<th>Nama</th>
+			<th>Hubungan</th>
+			<th>Tempat, Tanggal Lahir</th>
+			<th>Status Ketergantungan</th>
+			<th>Status</th>
+			<th>Pekerjaan</th>
+		</tr>
+		TABEL_INFORMASI_KELUARGA_DAN_TANGGUNGAN
+	</table>
+
+	<!-- Informasi Relasi -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">Informasi Relasi</td>
+		</tr>
+		<tr>
+			<th>Nama</th>
+			<th>Alamat</th>
+			<th>Telepon</th>
+			<th>Ponsel</th>
+			<th>Email</th>
+			<th>Nama Perusahaan</th>
+			<th>Posisi</th>
+		</tr>
+		TABLE_INFORMASI_RELASI
+	</table>
+
+	<!-- Informasi Keahlian dan Minat -->
+	<table>
+		<tr>
+			<td colspan="5" style="font-weight: bold">
+				Informasi Keahlian dan Minat
+			</td>
+		</tr>
+		<tr>
+			<th>Deskripsi</th>
+			<th>Baca</th>
+			<th>Menulis</th>
+			<th>Mendengar</th>
+			<th>Bicara</th>
+		</tr>
+		TABLE_INFORMASI_KEAHLIAN_DAN_MINAT
+		<tr>
+			<th colspan="5">B. Keahlian Pegawai</th>
+		</tr>
+		<tr>
+			<td>Deskripsi</td>
+			<td colspan="4">: DESKRIPSI_KEAHLIAN_PEGAWAI</td>
+		</tr>
+		<tr>
+			<th colspan="5">C. Daerah yang diamati</th>
+		</tr>
+		<tr>
+			<td>Deskripsi</td>
+			<td colspan="4">: DESKRIPSI_DAERAH_YANG_DIAMATI</td>
+		</tr>
+		<tr>
+			<th colspan="5">D. Jenis pekerjaan yang diminati</th>
+		</tr>
+		<tr>
+			<td>Deskripsi</td>
+			<td colspan="4">: DESKRIPSI_JENIS_PEKERJAAN_YANG_DIMINATI</td>
+		</tr>
+	</table>
+
+	<!-- Pendidikan -->
+	<table>
+		<tr>
+			<td colspan="9" style="font-weight: bold">Pendidikan</td>
+		</tr>
+		<tr>
+			<th>Level</th>
+			<th>Nama</th>
+			<th>Subjurusan</th>
+			<th>Periode</th>
+			<th>Kota/Kabupaten</th>
+			<th>Negara</th>
+			<th>IPK</th>
+			<th>Pendidikan Terakhir</th>
+			<th>Pendidikan Diakui</th>
+		</tr>
+		TABLE_PENDIDIKAN
+	</table>
+
+	<!-- Perubahan Jabatan / Grade Sebelum HCIS -->
+	<table>
+		<tr>
+			<td colspan="10" style="font-weight: bold">
+				Perubahan Jabatan / Grade Sebelum HCIS
+			</td>
+		</tr>
+		<tr>
+			<th>No</th>
+			<th>Nomor SK</th>
+			<th>TMT Jabatan</th>
+			<th>Nama Jabatan</th>
+			<th>Keterangan SK</th>
+			<th>Golongan</th>
+			<th>Grade</th>
+			<th>Unit Kerja</th>
+			<th>Status Jabatan</th>
+			<th>Level Jabatan</th>
+		</tr>
+		TABLE_PERUBAHAN_JABATAN_GRADE_SEBELUM_HCIS
+	</table>
+
+	<!-- Pemberhentian sebelum HCIS -->
+	<table>
+		<tr>
+			<td colspan="6" style="font-weight: bold">
+				Pemberhentian sebelum HCIS
+			</td>
+		</tr>
+		<tr>
+			<th>No</th>
+			<th>NPK</th>
+			<th>Nomor SK</th>
+			<th>Tanggal Mulai</th>
+			<th>Tanggal Mulai</th>
+			<th>Keterangan</th>
+		</tr>
+		TABLE_PEMBERHENTIAN_SEBELUM_HCIS
+	</table>
+
+	<!-- Catatan Karir -->
+	<table>
+		<tr>
+			<td colspan="14" style="font-weight: bold">Catatan Karir</td>
+		</tr>
+		<tr>
+			<th>No. Surat</th>
+			<th>TMT Masuk</th>
+			<th>Grade</th>
+			<th>Golongan</th>
+			<th>Tipe Perubahan Karir</th>
+			<th>Status Jabatan</th>
+			<th>Level Jabatan</th>
+			<th>Gaji Pokok</th>
+			<th>Posisi</th>
+			<th>Bidang / Group / Urusan</th>
+			<th>Unit Kerja</th>
+			<th>Status Pegawai</th>
+			<th>Keterangan</th>
+		</tr>
+		TABLE_CATATAN_KARIR
+	</table>
+
+	<!-- Catatan Penghargaan -->
+	<table>
+		<tr>
+			<td colspan="5" style="font-weight: bold">Catatan Penghargaan</td>
+		</tr>
+		<tr>
+			<th>NO SK</th>
+			<th>Tanggal Dari</th>
+			<th>Tanggal Sampai</th>
+			<th>Jenis Penghargaan</th>
+			<th>Keterangan</th>
+		</tr>
+		TABLE_CATATAN_PENGHARGAAN
+	</table>
+
+	<!-- Catatan Pelanggaran -->
+	<table>
+		<tr>
+			<td colspan="9" style="font-weight: bold">Catatan Pelanggaran</td>
+		</tr>
+		<tr>
+			<th>Nomor Surat</th>
+			<th>Tanggal SK</th>
+			<th>Tanggal Mulai</th>
+			<th>Tanggal Berakhir</th>
+			<th>Nama Pelanggaran</th>
+			<th>Periode Sanksi Pelanggaran</th>
+			<th>Unit Kerja</th>
+			<th>Keterangan</th>
+		</tr>
+		TABLE_CATATAN_PELANGGARAN
+	</table>
+
+	<!-- Informasi Asuransi -->
+	<table>
+		<tr>
+			<td colspan="5" style="font-weight: bold">Informasi Asuransi</td>
+		</tr>
+		<tr>
+			<th>No.</th>
+			<th>Nama Agen Asuransi</th>
+			<th>No KPJ</th>
+			<th>Tanggal Bergabung</th>
+			<th>Tanggal Selesai</th>
+		</tr>
+		TABLE_INFORMASI_ASURANSI
+	</table>
+
+	<!-- Informasi Rekening Bank -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">Informasi Rekening Bank</td>
+		</tr>
+		<tr>
+			<th>No.</th>
+			<th>Nama Bank</th>
+			<th>Cabang Bank</th>
+			<th>Rekening Bank</th>
+			<th>Nama Pemilik Rekening</th>
+			<th>Jenis Mata Uang</th>
+			<th>Jenis Simpanan</th>
+		</tr>
+		TABLE_INFORMASI_REKENING_BANK
+	</table>
+
+	<!-- Ikatan Dinas -->
+	<table>
+		<tr>
+			<td colspan="5" style="font-weight: bold">Ikatan Dinas</td>
+		</tr>
+
+		<tr>
+			<th>NPK</th>
+			<th>Nama</th>
+			<th>Tanggal Mulai</th>
+			<th>Tanggal Akhir</th>
+			<th>Deskripsi</th>
+		</tr>
+		TABLE_IKATAN_DINAS
+	</table>
+
+	<!-- Profil Psikologi -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">Profil Psikologi</td>
+		</tr>
+		<tr>
+			<th>No.</th>
+			<th>Nama Tes</th>
+			<th>Tanggal Tes</th>
+			<th>Penyelenggara</th>
+			<th>Biaya Tes</th>
+			<th>Nilai Tes</th>
+			<th>Hasil Tes</th>
+		</tr>
+		TABLE_PROFIL_PSIKOLOGI
+	</table>
+
+	<!-- Informasi Kesehatan -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">Informasi Kesehatan</td>
+		</tr>
+		<tr>
+			<td class="col-1">Tinggi Badan</td>
+			<td class="col-2">: TINGGI_BADAN_KARYAWAN</td>
+			<td class="col-3">Berat</td>
+			<td class="col-4">:BERAT_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Kondisi Kesehatan Yang Harus Diperhatikan</td>
+			<td>: KONDISI_KESEHATAN_YANG_HARUS_DIPERHATIKAN_KARYAWAN</td>
+			<td>Ukuran Kemeja</td>
+			<td>: UKURAN_KEMEJA_KARYAWAN</td>
+		</tr>
+		<tr>
+			<td>Alasan Harus Menjalani Perawatan</td>
+			<td>: ALASAN_HARUS_MENJALANI_PERAWATAN_KARYAWAN</td>
+			<td>Golongan Darah</td>
+			<td>: GOLONGAN_DARAH_KARYAWAN</td>
+		</tr>
+	</table>
+
+	<!-- Informasi Kursus -->
+	<table>
+		<tr>
+			<td colspan="7" style="font-weight: bold">Informasi Kursus</td>
+		</tr>
+		<tr>
+			<th>No.</th>
+			<th>Nama Kursus</th>
+			<th>Institusi</th>
+			<th>Periode Awal</th>
+			<th>Akhir Periode</th>
+			<th>Kota/Kabupaten</th>
+			<th>Sertifikat</th>
+		</tr>
+		TABLE_INFORMASI_KURSUS
+	</table>
+
+	<!-- Informasi Sertifikat -->
+	<table>
+		<tr>
+			<td colspan="5" style="font-weight: bold">Informasi Sertifikat</td>
+		</tr>
+		<tr>
+			<th>No.</th>
+			<th>Nama Sertifikasi</th>
+			<th>Penjelasan Sertifikasi</th>
+			<th>Tanggal Sertifikasi</th>
+			<th>Batas Berlaku Sertifikasi</th>
+		</tr>
+		TABLE_INFORMASI_SERTIFIKAT
+	</table>
+
+	<!-- Catatan Pengalaman Kerja -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">Catatan Pengalaman Kerja</td>
+		</tr>
+		<tr>
+			<th>Nama Perusahaan</th>
+			<th>Alamat</th>
+			<th>Periode</th>
+			<th>Gaji Terakhir</th>
+		</tr>
+		TABLE_CATATAN_PENGALAMAN_KERJA
+	</table>
+
+	<!-- Informasi Aktivitas Organisasi -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">
+				Informasi Aktivitas Organisasi
+			</td>
+		</tr>
+		<tr>
+			<th>Nama Organisasi</th>
+			<th>Tipe Organisasi</th>
+			<th>Periode</th>
+			<th>Posisi</th>
+		</tr>
+		TABLE_INFORMASI_AKTIVITAS_ORGANISASI
+	</table>
+
+	<!-- Dokumen Yang Habis Masa Berlakunya -->
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold">
+				Dokumen Yang Habis Masa Berlakunya
+			</td>
+		</tr>
+    <tr>
+			<th>Nama</th>
+			<th>Nomor Dokumen</th>
+			<th>Tanggal Habis Masa Berlaku</th>
+		</tr>
+		TABLE_DOKUMEN_YANG_HABIS_MASA_BERLAKUNYA
+	</table>
+
+	<!-- Informasi Lainnya -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">Informasi Lainnya</td>
+		</tr>
+		<tr>
+			<th>Informasi Beasiswa Perusahaan</th>
+			<th>Kekurangan / Kelemahan Yang Dimiliki</th>
+			<th>Waktu Senggang</th>
+			<th>Alasan Melamar</th>
+		</tr>
+		TABLE_INFORMASI_LAINNYA
+	</table>
+
+	<!-- Informasi Fasilitas -->
+	<table>
+		<tr>
+			<td colspan="4" style="font-weight: bold">Informasi Fasilitas</td>
+		</tr>
+		<tr>
+			<th>Nama Asset</th>
+			<th>Deskripsi Aset</th>
+			<th>Tanggal Terbit Aset</th>
+			<th>Status Kepemilikan Aset</th>
+		</tr>
+		TABLE_INFORMASI_FASILITAS
+	</table>
+
+	<!-- Informasi Pelatihan -->
+	<table>
+		<tr>
+			<td colspan="6" style="font-weight: bold">Informasi Pelatihan</td>
+		</tr>
+		<tr>
+			<th>Judul Pelatihan</th>
+			<th>Topik</th>
+			<th>Periode Pelatihan</th>
+			<th>Tipe Pelatihan</th>
+			<th>Penyelenggara Pelatihan</th>
+			<th>Sertifikat</th>
+		</tr>
+		TABLE_INFORMASI_PELATIHAN
+	</table>
+</body>
+
+</html>

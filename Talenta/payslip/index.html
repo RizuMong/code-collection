@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payslip</title>
+    <style>
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      @page {
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        margin-left: 1.5cm;
+        margin-right: 1.5cm;
+      }
+
+      .text-abu {
+        color: gray;
+      }
+
+      .font-calibri {
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      .text-red {
+        color: #e25441;
+      }
+
+      .text-gray {
+        color: #8e8e8e;
+      }
+
+      .border {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .border-gray {
+        border: 1px solid #e2e2e2;
+        border-collapse: collapse;
+      }
+
+      .border-right-gray {
+        border-right: 1px solid #e2e2e2;
+      }
+
+      .border-top-gray {
+        border-top: 1px solid #e2e2e2;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .bg-header {
+        background-color: #deeaf6;
+      }
+
+      .align-top {
+        vertical-align: top;
+      }
+
+      .mt-3 {
+        margin-top: 24px;
+      }
+
+      .mt-2 {
+        margin-top: 18px;
+      }
+
+      .text-xs {
+        font-size: 12px;
+      }
+
+      .text-sm {
+        font-size: 14px;
+      }
+
+      .text-base {
+        font-size: 16px;
+      }
+
+      .font-normal {
+        font-weight: 400;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .w-6 {
+        width: 50%;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .bg-grey {
+        background-color: #e2e2e2;
+      }
+
+      .h-9 {
+        height: 36px;
+      }
+
+      .pl-3 {
+        padding-left: 12px;
+      }
+
+      .pr-3 {
+        padding-right: 12px;
+      }
+
+      .text-2xl {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <table class="w-full">
+      <tr>
+        <th class="text-left w-6">
+          <img
+            src="https://jojo-receipt-new.s3.ap-southeast-1.amazonaws.com/23946/66fec61e612eb-talenta.png"
+            width="160"
+            alt="Logo Talenta"
+          />
+        </th>
+        <th class="font-calibri text-red text-right">*CONFIDENTIAL</th>
+      </tr>
+    </table>
+    <!-- Location -->
+    <table class="w-full mt-3">
+      <tr>
+        <th class="font-calibri text-base font-semibold text-left w-6">
+          Bandung
+        </th>
+        <th class="font-calibri text-right font-semibold">PAYSLIP</th>
+      </tr>
+    </table>
+    <!-- Payroll Info -->
+    <table class="w-full mt-2">
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">
+          Payroll cut off
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : 22 Jul - 21 Aug 2024
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          Grade / Level
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : 1 / Manager
+        </th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">ID / Name</th>
+        <th class="font-calibri text-base font-normal text-left">
+          : 273 / Rizki Haddi Prayoga
+        </th>
+        <th class="font-calibri text-base font-normal text-left">NPWP</th>
+        <th class="font-calibri text-base font-normal text-left">: -</th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">
+          Job position
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : Administration Staff
+        </th>
+        <th class="font-calibri text-base font-normal text-left">Branch</th>
+        <th class="font-calibri text-base font-normal text-left">: Bandung</th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">
+          Organization
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : Personalia Departement
+        </th>
+        <th class="font-calibri text-base font-normal text-left"></th>
+        <th class="font-calibri text-base font-normal text-left"></th>
+      </tr>
+    </table>
+    <!-- Detail Earnings and Deductions -->
+    <table class="w-full mt-3 border-gray">
+      <tr class="bg-grey h-9">
+        <th
+          colspan="2"
+          class="font-calibri w-6 pl-3 text-base font-semibold text-left"
+        >
+          Earnings
+        </th>
+        <th colspan="2" class="font-calibri w-6 pl-3 text-left font-semibold">
+          Deductions
+        </th>
+      </tr>
+      <tr>
+        <td class="font-calibri font-medium text-gray">LVL</td>
+        <td class="font-calibri font-medium text-right pr-3 border-right-gray">
+          500.000
+        </td>
+        <td class="font-calibri text-gray">BPJS Kesehatan Employee</td>
+        <td class="font-calibri font-medium text-right pr-3">70.000</td>
+      </tr>
+      <tr>
+        <td class="font-calibri font-medium text-gray">Basic Salary</td>
+        <td class="font-calibri font-medium text-right pr-3 border-right-gray">
+          5.000.000
+        </td>
+        <td class="font-calibri text-gray">PPH 21</td>
+        <td class="font-calibri font-medium text-right pr-3">100.000</td>
+      </tr>
+      <tr>
+        <td class="font-calibri font-medium text-gray">Lembur</td>
+        <td class="font-calibri font-medium text-right pr-3 border-right-gray">
+          1.000.000
+        </td>
+        <td class="font-calibri text-gray">Tapera</td>
+        <td class="font-calibri font-medium text-right pr-3">100.000</td>
+      </tr>
+      <tr>
+        <td class="font-calibri font-medium text-gray">Daily Allowance</td>
+        <td class="font-calibri font-medium text-right pr-3 border-right-gray">
+          1.000.000
+        </td>
+        <td class="font-calibri text-gray"></td>
+        <td class="font-calibri font-medium text-right pr-3"></td>
+      </tr>
+      <tr>
+        <td class="font-calibri font-semibold border-top-gray">
+          Total earnings
+        </td>
+        <td
+          class="font-calibri font-semibold text-right pr-3 border-right-gray border-top-gray"
+        >
+          7.000.000
+        </td>
+        <td class="font-calibri font-semibold border-top-gray">
+          Total deductions
+        </td>
+        <td class="font-calibri font-semibold text-right pr-3 border-top-gray">
+          270.000
+        </td>
+      </tr>
+    </table>
+    <!-- Take Home Pay -->
+    <table class="w-full">
+      <tr>
+        <th></th>
+        <th class="font-calibri text-right font-semibold text-2xl">
+          Take Home Pay Rp11.930.000
+        </th>
+      </tr>
+    </table>
+    <!-- Benefits -->
+    <table class="w-6 mt-3">
+      <tr>
+        <th class="font-calibri text-left text-base font-semibold">
+          Benefits*
+        </th>
+      </tr>
+      <tr>
+        <th
+          class="border-top-gray font-calibri text-left text-base font-medium text-gray"
+        >
+          FlexBen
+        </th>
+        <th
+          class="border-top-gray font-calibri text-right text-base font-medium"
+        >
+          5.000.000
+        </th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-left text-base font-medium text-gray">
+          BPJS Kesehatan Company
+        </th>
+        <th class="font-calibri text-right text-base font-medium">200.000</th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-left text-base font-semibold">
+          Total Benefits
+        </th>
+        <th class="font-calibri text-right text-base font-semibold">
+          5.200.000
+        </th>
+      </tr>
+    </table>
+    <!-- Absensi -->
+    <table class="w-full">
+      <tr>
+        <th class="text-2xl font-calibri">Absensi</th>
+      </tr>
+    </table>
+    <p class="font-semibold">Rekap:</p>
+    <table class="w-full">
+      <tr>
+        <th class="font-calibri text-left text-base font-normal">D=11</th>
+        <th class="font-calibri text-left text-base font-normal">CT=9</th>
+        <th class="font-calibri text-left text-base font-normal">D6=2</th>
+        <th class="font-calibri text-base font-normal">D7=2</th>
+        <th class="font-calibri text-right text-base font-normal">IT=5</th>
+        <th class="font-calibri text-right text-base font-normal">PD=1</th>
+        <th class="font-calibri text-right text-base font-normal">OBF=1</th>
+      </tr>
+    </table>
+    <table class="w-full mt-2 border">
+      <tr>
+        <th class="font-calibri border text-base font-bold">No.</th>
+        <th class="font-calibri border text-base font-bold">Tanggal</th>
+        <th class="font-calibri border text-base font-bold">Masuk</th>
+        <th class="font-calibri border text-base font-bold">Keluar</th>
+        <th class="font-calibri border text-base font-bold">Absensi</th>
+        <th class="font-calibri border text-base font-bold">HM</th>
+        <th class="font-calibri black text-base font-bold">Nominal HM</th>
+      </tr>
+      <tr>
+        <td class="font-calibri border text-base font-normal">1</td>
+        <td class="font-calibri border text-base font-normal">2024-04-15</td>
+        <td class="font-calibri border text-base font-normal">08:00:00</td>
+        <td class="font-calibri border text-base font-normal">17:00:00</td>
+        <td class="font-calibri border text-base font-normal">CT</td>
+        <td class="font-calibri border text-base font-normal">0</td>
+        <td class="font-calibri border text-base font-normal">0</td>
+      </tr>
+    </table>
+  </body>
+</html>
