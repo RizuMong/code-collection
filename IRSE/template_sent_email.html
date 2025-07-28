@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Confirmed - Indonesia Retail Summit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", Roboto,
+          sans-serif;
+        background: #ffffff;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        background: white;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 50px;
+        text-align: center;
+      }
+
+      .logo-section {
+        margin-bottom: 50px;
+      }
+
+      .main-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+      }
+
+      .info-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+      }
+
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      .info-row:last-child {
+        margin-bottom: 0;
+      }
+
+      .info-label {
+        color: #64748b;
+        font-weight: 500;
+      }
+
+      .info-value {
+        color: #334155;
+        font-weight: 600;
+      }
+
+      .signin-btn {
+        width: 800px;
+        padding: 18px 180px;
+        background: #557f55;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 26px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        margin-bottom: 50px;
+      }
+
+      .signin-btn:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer {
+        border-top: 1px solid #e5e7eb;
+        padding-top: 30px;
+        margin-top: 30px;
+      }
+
+      .footer p {
+        color: #9ca3af;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        .logo-section {
+          margin-bottom: 30px;
+        }
+
+        .main-title {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+          margin-bottom: 25px;
+          padding: 0 10px;
+        }
+
+        .info-card {
+          padding: 20px;
+          margin-bottom: 25px;
+        }
+
+        .info-row {
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+
+        .signin-btn {
+          max-width: 100%;
+          font-size: 20px;
+          padding: 18px 30px;
+          margin-bottom: 30px;
+        }
+
+        .footer {
+          padding-top: 25px;
+          margin-top: 25px;
+        }
+
+        .footer p {
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .container {
+          padding: 25px 15px;
+        }
+
+        .main-title {
+          font-size: 22px;
+        }
+
+        .subtitle {
+          font-size: 15px;
+        }
+
+        .info-card {
+          padding: 18px;
+          margin-bottom: 30px;
+        }
+
+        .signin-btn {
+          font-size: 18px;
+          padding: 16px 120px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="logo-section">
+        <img
+          src="https://officeless-production-public.oss-ap-southeast-5.aliyuncs.com/28122/688494e55a1a3-IRS.png"
+          alt="Indonesia Retail Summit & Expo"
+          style="
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+            margin-bottom: 20px;
+          "
+        />
+      </div>
+
+      <!-- Success State -->
+      <h2 class="main-title">Email Confirmed!</h2>
+      <p class="subtitle">
+        Your email has been successfully verified. You can now sign in to access
+        all features of the Indonesia Retail Summit platform.
+      </p>
+
+      <div class="info-card">
+        <div class="info-row">
+          <span class="info-label">Email:</span>
+          <span class="info-value" id="userEmail">VAR_EMAIL</span>
+        </div>
+      </div>
+
+      <a href="VAR_SIGN_IN" class="signin-btn">SIGN IN</a>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© VAR_TAHUN Indonesia Retail Summit & Expo. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

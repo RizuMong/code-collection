@@ -16,29 +16,29 @@
 // console.log(queryData);
 
 var data = [
- {
-                "_id": "6847b2e6813bb71b98774870",
-                "email": "fatkur.rizal@mekari.com",
-                "full_name": "fatkur rizal rochmadian putra",
-                "id_employee": "7JjKJAQqyvV5dgd7",
-                "npk": "100462510"
-            }
-]
+  {
+    _id: "6847b2e6813bb71b98774870",
+    email: "fatkur.rizal@mekari.com",
+    full_name: "fatkur rizal rochmadian putra",
+    id_employee: "7JjKJAQqyvV5dgd7",
+    npk: "100462510",
+  },
+];
 
 var userIds = [];
 
 function getValue(val) {
-  return (val !== undefined && val !== null) ? val : "--";
-};
+  return val !== undefined && val !== null ? val : "--";
+}
 
-var employee = (data && data.length > 0) ? data[0] : {};
+var employee = data && data.length > 0 ? data[0] : {};
 
 userIds.push({
-  "user_id": getValue(employee.talenta_user_id),
-  "email": getValue(employee.email),
-  "employee_name": getValue(employee.full_name),
-  "employee_id": getValue(employee.id_employee),
-  "npk": getValue(employee.npk)
+  user_id: getValue(employee.talenta_user_id),
+  email: getValue(employee.email),
+  employee_name: getValue(employee.full_name),
+  employee_id: getValue(employee.id_employee),
+  npk: getValue(employee.npk),
 });
 
 console.log(userIds);
