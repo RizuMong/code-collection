@@ -39,10 +39,8 @@ function formatDate(timestamp) {
 
 function formatYear(timestamp) {
   var d = new Date(timestamp);
-  var year = d.getFullYear(); 
+  var year = d.getFullYear();
   return year;
 };
 
 console.log(formatYear(Date.now()));
-
-
