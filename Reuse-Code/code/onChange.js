@@ -7,9 +7,21 @@ if (_field.type === "literal") {
   _fieldProperties.position_id.is_mandatory = true;
 }
 
+if (_field.status_transaksi === "Selesai") {
+  _fieldProperties.mekanisme_pembayaran.is_disable = true;
+}
+
 if (_field.type === "temporary") {
   _fieldProperties.employee_id.is_hidden = false;
   _fieldProperties.position_id.is_hidden = true;
+}
+
+if (!!_field.activity) {
+  _field.conference = null;
+} else {
+  if (_field.activity.name === "QNA") {
+    _fieldProperties.conference.is_hidden = false;
+  }
 }
 
 if (
@@ -104,4 +116,4 @@ _fieldProperties.wfh_quota_days.is_hidden = true;
 if (_field.is_custom_wfh) {
   _fieldProperties.wfh_quota_id.is_hidden = false;
   _fieldProperties.wfh_quota_days.is_hidden = false;
-};
+}

@@ -5,7 +5,7 @@ var redirect = {
   application_name: "Kepegawaian", // app name
   pages_id: 39214, // id page
   pages_name: "Direktori-Karyawan",
-  record_id: _record.employee_id.id, // id record
+  record_id: _record.employee_id.id, // id record (jika mau redirect ke record tertentu)
   form_ui_id: "Ksu-NccNg", // id multiple experience
   tab_name: "Keahlian & Minat",
   "message_type": "warning" // warning/info/error
@@ -68,3 +68,25 @@ var redirect = {
 };
 
 var message = "success redirect ke link";
+
+
+// #reload component
+var redirect = {
+    "reload_component" : true
+   }
+
+
+// #reload data
+var redirect = {
+    "reload_data" : true
+   }
+
+// #reload page
+var redirect = {
+    "reload_page" : true
+   }
+
+// #redirect to page using comp. embed url
+var redirect = {
+    "param_embed_url" : "?id=10&status=success"
+}
