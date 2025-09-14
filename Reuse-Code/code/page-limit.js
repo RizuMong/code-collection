@@ -5,7 +5,7 @@ function _log(msg) {
 // Contoh Data
 var payload = {
   count: 10,
-  limit: 1,
+  limit: 10,
 };
 
 var countTotal = payload.count;
