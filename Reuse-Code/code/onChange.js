@@ -11,10 +11,89 @@ if (_field.status_transaksi === "Selesai") {
   _fieldProperties.mekanisme_pembayaran.is_disable = true;
 }
 
+if (_field.jalur_otorisasi === "SEJAJAR") {
+  _fieldProperties.level_otorisasi.is_hidden = true;
+  _field.level_otorisasi = "";
+} else if (_field.jalur_otorisasi === "BAWAH") {
+  _fieldProperties.level_otorisasi.is_hidden = false;
+}
+
+if (_field.level_otorisasi === "1") {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = false;
+} else {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = true;
+}
+
+if (_field.level_otorisasi === "2") {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = false;
+} else {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = true;
+}
+
+if (_field.level_otorisasi === "3") {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = false;
+} else {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = true;
+}
+
+if (_field.level_otorisasi === "4") {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = false;
+} else {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = true;
+}
+
+if (_field.level_otorisasi === "5") {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = false;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = false;
+} else {
+  _fieldProperties.unit_kerja_ids_1.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_2.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_3.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_4.is_hidden = true;
+  _fieldProperties.unit_kerja_ids_5.is_hidden = true;
+}
+
 if (_field.type === "temporary") {
   _fieldProperties.employee_id.is_hidden = false;
   _fieldProperties.position_id.is_hidden = true;
 }
+
+if (!_field.unit_kerja_id) {
+  _field.kode_unit_kerja = "";
+  _field.nama_unit_kerja = "";
+  _field.email = "";
+} else {
+  _field.kode_unit_kerja = _field.unit_kerja_id.kode;
+  _field.nama_unit_kerja = _field.unit_kerja_id.nama;
+  _field.email = _field.unit_kerja_id.email;
+}
+
+// req.body.wfh_quota_id && req.body.wfh_quota_id.id ? req.body.wfh_quota_id.id : "--"
 
 if (!!_field.activity) {
   _field.conference = null;
