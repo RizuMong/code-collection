@@ -1,0 +1,27 @@
+var req = {
+  _id: "68dc0ad3813bb71b98052019",
+  attachment: "",
+  company_id: 27414,
+  created_at: 1759251154741,
+  created_by: 187870,
+  day: 30,
+  employee_ids: [],
+  end_date: 1759165200000,
+  flow_status: "draft",
+  id: "W7OdpXV0jrE",
+  id_employee_overtime: "W7OdpXV0jrE",
+  level_organisasi_id: {},
+  month: 9,
+  reason: "Lembur 30 september",
+  sk_number_id: {
+    id: "",
+    name: "",
+  },
+  start_date: 1759165200000,
+  unit_kerja_id: {},
+  updated_at: 1759251158751,
+  updated_by: 187870,
+  workflow_id: "pengajuan_lembur",
+  year: 2025,
+};
+
