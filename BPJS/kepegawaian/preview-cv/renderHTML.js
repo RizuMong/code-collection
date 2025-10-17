@@ -107,70 +107,70 @@ function getNestedValue(obj, path) {
 
 
 function generateTable(data, columns) {
-  var html = "<tbody>";
+    var html = "<tbody>";
 
-  if (!data || data.length === 0) {
-    html +=
-      '<tr><td colspan="' +
-      columns.length +
-      '" class="no-data">' +
-      "------------------------------ TIDAK ADA DATA ------------------------------" +
-      "</td></tr>";
-  } else {
-    for (var i = 0; i < data.length; i++) {
-      var row = data[i];
-      html += "<tr>";
+    if (!data || data.length === 0) {
+        html +=
+            '<tr><td colspan="' +
+            columns.length +
+            '" class="no-data">' +
+            "------------------------------ TIDAK ADA DATA ------------------------------" +
+            "</td></tr>";
+    } else {
+        for (var i = 0; i < data.length; i++) {
+            var row = data[i];
+            html += "<tr>";
 
-      for (var j = 0; j < columns.length; j++) {
-        var col = columns[j];
+            for (var j = 0; j < columns.length; j++) {
+                var col = columns[j];
 
-        // handle kolom kosong
-        if (col.key === "--") {
-          html += "<td></td>";
-          continue;
-        }
+                // handle kolom kosong
+                if (col.key === "--") {
+                    html += "<td></td>";
+                    continue;
+                }
 
-        // handle auto-numbering
-        if (col.key === "NO") {
-          html += "<td>" + (i + 1) + "</td>";
-          continue;
-        }
+                // handle auto-numbering
+                if (col.key === "NO") {
+                    html += "<td>" + (i + 1) + "</td>";
+                    continue;
+                }
 
-        var value = "";
+                var value = "";
 
-        // handle combine field
-        if (col.combine && col.combine.length > 0) {
-          var parts = [];
-          for (var k = 0; k < col.combine.length; k++) {
-            var combineKey = col.combine[k];
-            var raw = getNestedValue(row, combineKey);
-            var part = raw;
+                // handle combine field
+                if (col.combine && col.combine.length > 0) {
+                    var parts = [];
+                    for (var k = 0; k < col.combine.length; k++) {
+                        var combineKey = col.combine[k];
+                        var raw = getNestedValue(row, combineKey);
+                        var part = raw;
 
-            // check tipe per item
-            if (col.types && col.types[k] === "date") {
-              part = formatTanggal(raw);
+                        // check tipe per item
+                        if (col.types && col.types[k] === "date") {
+                            part = formatTanggal(raw);
+                        }
+
+                        parts.push(part != null ? part : "-");
+                    }
+
+                    value = parts.join(col.separator || " ");
+                } else {
+                    value = getNestedValue(row, col.key);
+                    if (col.type === "date") {
+                        value = formatTanggal(value);
+                    }
+                }
+
+                html += "<td>" + (value != null ? value : "-") + "</td>";
             }
 
-            parts.push(part != null ? part : "-");
-          }
-
-          value = parts.join(col.separator || " ");
-        } else {
-          value = getNestedValue(row, col.key);
-          if (col.type === "date") {
-            value = formatTanggal(value);
-          }
+            html += "</tr>";
         }
-
-        html += "<td>" + (value != null ? value : "-") + "</td>";
-      }
-
-      html += "</tr>";
     }
-  }
 
-  html += "</tbody>";
-  return html;
+    html += "</tbody>";
+    return html;
 }
 
 

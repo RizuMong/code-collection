@@ -4,7 +4,7 @@ function _log(msg) {
 
 // Contoh Data
 var payload = {
-  count: 10,
+  count: 1000,
   limit: 10,
 };
 
