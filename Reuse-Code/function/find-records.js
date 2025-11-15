@@ -58,7 +58,6 @@
 */
 
 var filter = {
-
   _filter_version: 2,
   //   where_is_and: {
   //     name: payload.data.company_code,
