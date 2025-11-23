@@ -1,0 +1,112 @@
+ {
+    "body": {
+        "additional_fields": [
+            {
+                "id": 17947074,
+                "name": "temporary_customer_id",
+                "value": "25-TC-000006",
+                "value_name": "25-TC-000006"
+            },
+            {
+                "id": 17946872,
+                "name": "ldms_customer_id",
+                "value": "25-TC-000006",
+                "value_name": "25-TC-000006"
+            },
+            {
+                "id": 17947071,
+                "name": "subject_type",
+                "value": "5879101",
+                "value_name": "After Sales"
+            },
+            {
+                "id": 17947072,
+                "name": "nama",
+                "value": "Yuniar Anis ",
+                "value_name": "Yuniar Anis "
+            },
+            {
+                "id": 17913386,
+                "name": "vin",
+                "value": "",
+                "value_name": ""
+            },
+            {
+                "id": 17947013,
+                "name": "plate_no",
+                "value": "",
+                "value_name": ""
+            },
+            {
+                "id": 17947068,
+                "name": "description",
+                "value": "test description",
+                "value_name": "test description"
+            },
+            {
+                "id": 17960493,
+                "name": "cc_additional_information",
+                "value": "test description",
+                "value_name": "test description"
+            },
+            {
+                "id": 17947069,
+                "name": "interface_ticket_qontak",
+                "value": "5879091",
+                "value_name": "True"
+            }
+        ],
+        "closed_date": null,
+        "creator_id": 272561,
+        "crm_company_id": null,
+        "crm_company_name": null,
+        "crm_lead_ids": [],
+        "crm_lead_name": [],
+        "crm_lost_reason_id": null,
+        "crm_lost_reason_name": null,
+        "crm_pipeline_id": 216817,
+        "crm_pipeline_name": "VTS - High",
+        "crm_priority_id": null,
+        "crm_priority_name": null,
+        "crm_source_id": null,
+        "crm_source_name": null,
+        "crm_stage_id": 1301441,
+        "crm_stage_name": "Open",
+        "currency": "IDR",
+        "expired_date": null,
+        "name": "25-TC-000006 - Yuniar Anis ",
+        "product_association_ids": [],
+        "product_association_name": [],
+        "product_association_price": [],
+        "product_association_quantity": [],
+        "product_association_total_price": [],
+        "size": null,
+        "start_date": "2025-11-22T06:28:13.000+07:00"
+    },
+    "body_raw": "{\"additional_fields\":[{\"id\":17947074,\"name\":\"temporary_customer_id\",\"value\":\"25-TC-000006\",\"value_name\":\"25-TC-000006\"},{\"id\":17946872,\"name\":\"ldms_customer_id\",\"value\":\"25-TC-000006\",\"value_name\":\"25-TC-000006\"},{\"id\":17947071,\"name\":\"subject_type\",\"value\":\"5879101\",\"value_name\":\"After Sales\"},{\"id\":17947072,\"name\":\"nama\",\"value\":\"Yuniar Anis \",\"value_name\":\"Yuniar Anis \"},{\"id\":17913386,\"name\":\"vin\",\"value\":\"\",\"value_name\":\"\"},{\"id\":17947013,\"name\":\"plate_no\",\"value\":\"\",\"value_name\":\"\"},{\"id\":17947068,\"name\":\"description\",\"value\":\"test description\",\"value_name\":\"test description\"},{\"id\":17960493,\"name\":\"cc_additional_information\",\"value\":\"test description\",\"value_name\":\"test description\"},{\"id\":17947069,\"name\":\"interface_ticket_qontak\",\"value\":\"5879091\",\"value_name\":\"True\"}],\"closed_date\":null,\"creator_id\":272561,\"crm_company_id\":null,\"crm_company_name\":null,\"crm_lead_ids\":[],\"crm_lead_name\":[],\"crm_lost_reason_id\":null,\"crm_lost_reason_name\":null,\"crm_pipeline_id\":216817,\"crm_pipeline_name\":\"VTS - High\",\"crm_priority_id\":null,\"crm_priority_name\":null,\"crm_source_id\":null,\"crm_source_name\":null,\"crm_stage_id\":1301441,\"crm_stage_name\":\"Open\",\"currency\":\"IDR\",\"expired_date\":null,\"name\":\"25-TC-000006 - Yuniar Anis \",\"product_association_ids\":[],\"product_association_name\":[],\"product_association_price\":[],\"product_association_quantity\":[],\"product_association_total_price\":[],\"size\":null,\"start_date\":\"2025-11-22T06:28:13.000+07:00\"}",
+    "caller": {
+        "info": {
+            "automation_id": "SxifkUYIOsMI",
+            "running_id": "n07DBL2qaffN"
+        },
+        "type": "block_action"
+    },
+    "header": {
+        "Authorization": "Bearer P99n2pC-FvKPvTjVbj-g8HUB24yGc_8Uh6TRHgN8AyE",
+        "Content-Type": "application/json",
+        "caller-info": "{\"info\":{\"automation_id\":\"SxifkUYIOsMI\",\"running_id\":\"n07DBL2qaffN\"},\"type\":\"block_action\"}"
+    },
+    "http_status_code": 200,
+    "response": {
+        "meta": {
+            "developer_message": "Success",
+            "error_code": null,
+            "info": "https://developers.qontak.com/docs/api/response-codes#200",
+            "log_id": "1916be64-7b9f-4203-b6c4-d69bfbd4028drails5",
+            "message": "Success",
+            "status": 200,
+            "timestamp": "2025-11-21T23:28:15.000+00:00",
+            "type": "OK"
+        }
+    }
+}
