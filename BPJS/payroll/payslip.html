@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payslip</title>
+    <style>
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      @page {
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        margin-left: 1.5cm;
+        margin-right: 1.5cm;
+      }
+
+      .text-abu {
+        color: gray;
+      }
+
+      .font-calibri {
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      .text-red {
+        color: #e25441;
+      }
+
+      .text-gray {
+        color: #8e8e8e;
+      }
+
+      .border {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .border-gray {
+        border: 1px solid #e2e2e2;
+        border-collapse: collapse;
+      }
+
+      .border-right-gray {
+        border-right: 1px solid #e2e2e2;
+      }
+
+      .border-top-gray {
+        border-top: 1px solid #e2e2e2;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .bg-header {
+        background-color: #deeaf6;
+      }
+
+      .align-top {
+        vertical-align: top;
+      }
+
+      .mt-3 {
+        margin-top: 24px;
+      }
+
+      .mt-2 {
+        margin-top: 18px;
+      }
+
+      .text-xs {
+        font-size: 12px;
+      }
+
+      .text-sm {
+        font-size: 14px;
+      }
+
+      .text-base {
+        font-size: 16px;
+      }
+
+      .font-normal {
+        font-weight: 400;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .w-6 {
+        width: 50%;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .bg-grey {
+        background-color: #e2e2e2;
+      }
+
+      .h-9 {
+        height: 36px;
+      }
+
+      .pl-3 {
+        padding-left: 12px;
+      }
+
+      .pr-3 {
+        padding-right: 12px;
+      }
+
+      .text-xl {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .text-2xl {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <table class="w-full">
+      <tr>
+        <th class="text-left w-6">
+          <img
+            src="https://jojo-receipt-new.s3.ap-southeast-1.amazonaws.com/23946/66fec61e612eb-talenta.png"
+            width="160"
+            alt="Logo Talenta"
+          />
+        </th>
+        <th class="font-calibri text-red text-right">*CONFIDENTIAL</th>
+      </tr>
+    </table>
+    <!-- Location -->
+    <table class="w-full mt-3">
+      <tr>
+        <th class="font-calibri text-base font-semibold text-left w-6">
+          COMPANY_NAME
+        </th>
+        <th class="font-calibri text-right font-semibold">SLIP GAJI</th>
+      </tr>
+    </table>
+    <!-- Payroll Info -->
+    <table class="w-full mt-2">
+      <tr>
+        <th
+          style="width: 40%"
+          class="font-calibri text-base font-normal text-left"
+        >
+          Batas Perhitungan Gaji
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : PAYMENT_DATE
+        </th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">
+          Nama Lengkap
+        </th>
+        <th class="font-calibri text-base font-normal text-left">
+          : FULL_NAME
+        </th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">NPK</th>
+        <th class="font-calibri text-base font-normal text-left">: NPK</th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">Jabatan</th>
+        <th class="font-calibri text-base font-normal text-left">: JABATAN</th>
+      </tr>
+      <tr>
+        <th class="font-calibri text-base font-normal text-left">Posisi</th>
+        <th class="font-calibri text-base font-normal text-left">: POSITION</th>
+      </tr>
+    </table>
+    <!-- Detail Earnings and Deductions -->
+    <table class="w-full mt-3 border-gray">
+      <tr class="bg-grey h-9">
+        <th
+          colspan="2"
+          class="font-calibri w-6 pl-3 text-base font-semibold text-left"
+        >
+          Pendapatan
+        </th>
+        <th colspan="2" class="font-calibri w-6 pl-3 text-left font-semibold">
+          Potongan
+        </th>
+      </tr>
+      <tr>
+        <!-- Earnings -->
+        <td class="font-calibri font-medium">COMPONENT</td>
+        <td class="font-calibri font-medium text-right pr-3 border-right-gray">
+          SUM_COMPONENT
+        </td>
+
+        <!-- Deduct -->
+        <td class="font-calibri">COMPONENT</td>
+        <td class="font-calibri font-medium text-right pr-3">SUM_COMPONENT</td>
+      </tr>
+      <tr>
+        <td class="font-calibri font-semibold border-top-gray">
+          Total Pendapatan
+        </td>
+        <td
+          class="font-calibri font-semibold text-right pr-3 border-right-gray border-top-gray"
+        >
+          SUM_INCOME_SALARY
+        </td>
+        <td class="font-calibri font-semibold border-top-gray">
+          Total Potongan
+        </td>
+        <td class="font-calibri font-semibold text-right pr-3 border-top-gray">
+          SUM_DEDUCT_SALARY
+        </td>
+      </tr>
+    </table>
+    <!-- Take Home Pay -->
+    <table class="w-full">
+      <tr>
+        <th></th>
+        <th class="font-calibri text-right font-semibold text-xl">
+          Total Pendapatan Bersih TAKE_HOME_PAY
+        </th>
+      </tr>
+    </table>
+    <!-- Transfer To -->
+    <table class="w-full mt-3">
+      <tr>
+        <th class="font-calibri text-base font-bold text-left">
+          Dibayarkan Ke
+        </th>
+      </tr>
+    </table>
+    <hr />
+    <table class="w-full">
+      <tr>
+        <th
+          style="width: 80%"
+          class="font-calibri text-sm font-normal text-left w-6"
+        >
+          [PAYMENT_DATE] - BANK_NAME - BANK_ACCOUNT_OWNER - BANK_ACCOUNT_NUMBER
+        </th>
+        <th class="font-calibri text-sm font-normal text-left">
+          TAKE_HOME_PAY
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>
