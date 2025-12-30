@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Resi Pengiriman JNE</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+        }
+
+        .resi-container {
+            width: 100%;
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .service {
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 4px 0;
+            vertical-align: top;
+        }
+
+        .label {
+            width: 30%;
+            color: #555;
+        }
+
+        .barcode-section {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .barcode-section img {
+            width: 300px;
+            height: auto;
+        }
+
+        .resi-number {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 6px;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 10px;
+            text-align: center;
+            border-top: 1px solid #000;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resi-container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo">JNE</div>
+            <div class="service">
+                REG<br />
+                Jakarta - Bandung
+            </div>
+        </div>
+
+        <!-- SENDER -->
+        <div class="section">
+            <div class="section-title">Pengirim</div>
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>: PT Mid Solusi Indonesia</td>
+                </tr>
+                <tr>
+                    <td class="label">Alamat</td>
+                    <td>: Jl. Contoh No. 123, Jakarta Selatan</td>
+                </tr>
+                <tr>
+                    <td class="label">Telepon</td>
+                    <td>: 021-12345678</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- RECEIVER -->
+        <div class="section">
+            <div class="section-title">Penerima</div>
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>: Budi Santoso</td>
+                </tr>
+                <tr>
+                    <td class="label">Alamat</td>
+                    <td>: Jl. Merdeka No. 45, Bandung</td>
+                </tr>
+                <tr>
+                    <td class="label">Telepon</td>
+                    <td>: 0812-9999-8888</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- PACKAGE -->
+        <div class="section">
+            <div class="section-title">Detail Kiriman</div>
+            <table>
+                <tr>
+                    <td class="label">Berat</td>
+                    <td>: 2 Kg</td>
+                </tr>
+                <tr>
+                    <td class="label">Isi</td>
+                    <td>: Dokumen</td>
+                </tr>
+                <tr>
+                    <td class="label">Tanggal</td>
+                    <td>: 27 Januari 2025</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- BARCODE -->
+        <div class="barcode-section">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAACWEAAAAABT8G8CAAACn0lEQVR4nOzVwUoDMRRAUSv+/y/XRRcWwoQ3Ny4Ez1lJGZ956cj9ej4/jj0ePz+/5r0+eZ+9frJOeP/dddq7dc7VhP3z+zO3J9et57usz9/d8be2mJx5PuFqi/125zc5Of/q6j28Ov98/uSEk/dhfxvze5ic9m9+F+c3Ntnl7rd88v+y/+v7LSYnnMy/7/N8BAD/kYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICADJdwAAAP//GEOJLT7O0ZgAAAAASUVORK5CYII="
+                alt="Barcode Resi JNE" />
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            Resi ini dihasilkan secara otomatis oleh sistem Officeless<br />
+            Barcode digunakan sebagai identifikasi pengiriman
+        </div>
+
+    </div>
+
+</body>
+
+</html>
