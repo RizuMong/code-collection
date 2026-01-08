@@ -84,52 +84,82 @@ var getDatas = [
   },
 ];
 
+var getPlanning = {
+  "ids": 123
+};
+
 var project_id = "";
+
+var role_map = {
+  "Solution Engineer": "solution_engineer",
+  "UI Solution Engineer": "ui_solution_engineer",
+  "System Analyst": "system_analyst",
+  "Quality Assurance": "quality_assurance",
+  "Devops": "devops",
+  "Technical Writer": "technical_writer"
+};
 
 var grouped = {};
 
 for (var i = 0; i < getDatas.length; i++) {
   var item = getDatas[i];
-  
-  var isValid = true;
+  var is_valid = true;
 
   if (project_id) {
-    isValid = false;
-    var projectPlans = item.project_plans || [];
+    is_valid = false;
+    var project_plans = item.project_plans || [];
 
-    for (var j = 0; j < projectPlans.length; j++) {
-      var p = projectPlans[j];
-      if (p.project_id && p.project_id.id === project_id) {
-        isValid = true;
+    for (var j = 0; j < project_plans.length; j++) {
+      if (
+        project_plans[j].project_id &&
+        project_plans[j].project_id.id === project_id
+      ) {
+        is_valid = true;
         break;
       }
     }
   }
 
-  if (isValid) {
-    var month = item.month;
+  if (!is_valid) continue;
 
-    if (!grouped[month]) {
-      grouped[month] = {
-        id: item.ids,
-        month: month,
-        year: item.year,
-        name: item.month_id.name,
-        capacity: 0,
-        plan: 0,
-      };
-    }
+  var month = item.month;
 
-    grouped[month].capacity += item.total_capacity;
-    grouped[month].plan += item.total_plan;
+  if (!grouped[month]) {
+    grouped[month] = {
+      id: getPlanning.ids,
+      month: month,
+      year: item.year,
+      name: item.month_id.name,
+      capacity: 0,
+      plan: 0,
+      summary: {
+        solution_engineer: { plan: 0, actual: 0 },
+        ui_solution_engineer: { plan: 0, actual: 0 },
+        system_analyst: { plan: 0, actual: 0 },
+        quality_assurance: { plan: 0, actual: 0 },
+        devops: { plan: 0, actual: 0 },
+        technical_writer: { plan: 0, actual: 0 }
+      }
+    };
   }
-};
+
+  var role_key = role_map[item.role_id.name];
+
+  if (role_key) {
+    grouped[month].summary[role_key].plan += item.total_plan;
+    grouped[month].summary[role_key].actual += item.total_capacity;
+  }
+
+  grouped[month].capacity += item.total_capacity;
+  grouped[month].plan += item.total_plan;
+}
 
 var datas = [];
+
 for (var key in grouped) {
   if (grouped.hasOwnProperty(key)) {
     datas.push(grouped[key]);
   }
 }
 
-console.log(datas);
+console.log(datas[0]);
