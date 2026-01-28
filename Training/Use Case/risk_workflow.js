@@ -65,4 +65,4 @@ if (selectedLevel) {
     result.status = "LOW"
 };
 
-console.log(result);
+console.log(result);z

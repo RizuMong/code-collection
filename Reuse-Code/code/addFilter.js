@@ -16,21 +16,22 @@ var req = {
 
 var filter = {
   _filter_version: 2,
+  where_is_and: {}
 };
 
-var where = {};
+// var where = {};
 
 if (req.body.filter["material_id.id"]) {
-  where["material_id.id"] = req.body.filter["material_id.id"];
-}
+  filter.where_is_and["material_id.id"] = req.body.filter["material_id.id"];
+};
 
-if (req.body.filter["store_id.id"]) {
-  where["store_id.id"] = req.body.filter["store_id.id"];
-}
+// if (req.body.filter["store_id.id"]) {
+//   where["store_id.id"] = req.body.filter["store_id.id"];
+// }
 
-if (Object.keys(where).length > 0) {
-  filter.where_is_and = where;
-}
+// if (Object.keys(where).length > 0) {
+//   filter.where_is_and = where;
+// }
 
 console.log(filter);
 
