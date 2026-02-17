@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="SOP Raise Product Issue - Vertical Header">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1600">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Header -->
+        <mxCell id="h1" value="Client / User" style="shape=rectangle;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="h2" value="SE" style="shape=rectangle;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="0" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="h3" value="Senior SE" style="shape=rectangle;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="0" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="h4" value="Product" style="shape=rectangle;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="0" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Client -->
+        <mxCell id="start" value="Start" style="ellipse;" vertex="1" parent="1">
+          <mxGeometry x="150" y="100" width="100" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="report" value="Report Issue" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- SE -->
+        <mxCell id="receive" value="Receive / Discover Issue" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="validate" value="Initial Validation" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d1" value="Resolved by SE?" style="rhombus;" vertex="1" parent="1">
+          <mxGeometry x="520" y="400" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="inform" value="Inform Client" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="escalate" value="Escalate to Senior SE" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="650" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Senior SE -->
+        <mxCell id="deep" value="Deep Validation" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="200" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d2" value="Setup / Config Issue?" style="rhombus;" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d3" value="Product Issue?" style="rhombus;" vertex="1" parent="1">
+          <mxGeometry x="920" y="480" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- SE Fix & Jira -->
+        <mxCell id="fix" value="Fix Issue" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="800" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="jira" value="Create Jira (OPT Template)" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="900" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hygiene" value="Input to Hygiene Sheet" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1000" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Product -->
+        <mxCell id="investigate" value="Investigate" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="900" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="update" value="Update Jira &amp; Inform Group" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1100" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors -->
+        <mxCell edge="1" parent="1" source="start" target="report"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="report" target="receive"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="receive" target="validate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="validate" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell value="Yes" edge="1" parent="1" source="d1" target="inform"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell value="No" edge="1" parent="1" source="d1" target="escalate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="escalate" target="deep"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="deep" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell value="Yes" edge="1" parent="1" source="d2" target="fix"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell value="No" edge="1" parent="1" source="d2" target="d3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell value="Yes" edge="1" parent="1" source="d3" target="jira"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="jira" target="hygiene"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="hygiene" target="investigate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="investigate" target="update"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
