@@ -1,19 +1,11 @@
-var request = {
-  report_type: "reimbursement",
-  employee_id: "EMP123",
-  employee_name: "Rizki Haddi",
-  department: "Finance",
-  position: "Staff",
-  reimbursement_date: 1752000000000, // 2025-07-02
-  category: "Transport",
-  description: "Taxi from office to client site",
-  amount: 150000,
-  flow_status: "approved"
-};
+const time = [];
 
-console.log(request.report_type);
-
-
-res = {
-  
+for (let hour = 0; hour < 24; hour++) {
+  for (let minute = 0; minute < 60; minute++) {
+    const h = String(hour).padStart(2, '0');
+    const m = String(minute).padStart(2, '0');
+    time.push(`${h}:${m}`);
+  }
 }
+
+console.log(time);
