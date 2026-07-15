@@ -34,3 +34,29 @@ _field.approval_line.forEach(function (item, index) {
     _fieldPropertiesGroup.approval_line[index].posisi.is_hidden = true;
   }
 });
+
+
+_field.questions.forEach(function (item, index) {
+  if (_field.questions[index].answer_mode === "Single") {
+    _fieldPropertiesGroup.questions[index].follow_up.is_hidden = false;
+    _fieldPropertiesGroup.questions[index].follow_up_yes.is_hidden = true;
+    _fieldPropertiesGroup.questions[index].follow_up_no.is_hidden = true;
+  } else if (_field.questions[index].answer_mode === "Conditional") {
+    _fieldPropertiesGroup.questions[index].follow_up.is_hidden = true;
+    _fieldPropertiesGroup.questions[index].follow_up_yes.is_hidden = false;
+    _fieldPropertiesGroup.questions[index].follow_up_no.is_hidden = false;
+  } else if (_field.questions[index].answer_mode === "None") {
+    _fieldPropertiesGroup.questions[index].follow_up.is_hidden = true;
+    _fieldPropertiesGroup.questions[index].follow_up_yes.is_hidden = true;
+    _fieldPropertiesGroup.questions[index].follow_up_no.is_hidden = true;
+  }
+});
+
+
+_field.approval_line.forEach(function (item, index) {
+  if (_field.questions[index].answer_mode === "Holding Approval") {
+    _fieldPropertiesGroup.questions[index].employee.is_hidden = true;
+  } else if (_field.questions[index].answer_mode === "By PIC") {
+    _fieldPropertiesGroup.questions[index].employee.is_hidden = false;
+  };
+});
