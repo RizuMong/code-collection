@@ -1,15 +1,24 @@
 {
     "code": 200,
-    "message": "Success",
+    "message": "Success Get Productivity",
     "data": {
-        "weightage_in_okr": 10.0,
-        "target_percentage": 10.0,
-        "available_man_hours": 10.0,
-        "actual_man_hours": 8.0,
-        "variance_percentage": -20.0,
-        "variance_status": "OVERESTIMATE",
-        "final_score": 9.0,
+        "weightage_in_okr": 30.0,
+        "final_score": 25.5,
         "achievement_status": "UNDERACHIEVED",
+        "summary": [
+            {
+                "key": "MANHOUR_UTILIZATION",
+                "percentage": 94.2,
+                "actual_man_hours": 1130.4,
+                "estimate_man_hours": 1200.0
+            },
+            {
+                "key": "TASK_COMPLETION",
+                "percentage": 85.0,
+                "completed_task_count": 136,
+                "total_task_count": 160
+            }
+        ],
         "assignees": [
             {
                 "id": "1",
@@ -18,26 +27,30 @@
                     "id": "1",
                     "name": "Solution Engineer"
                 },
-                "available_man_hours": 10.0,
-                "actual_man_hours": 8.0,
-                "variance_percentage": -20.0,
-                "variance_status": "OVERESTIMATE",
-                "final_score": 9.0,
-                "achievement_status": "UNDERACHIEVED"
+                "manhour_utilization_percentage": 100.0,
+                "actual_man_hours": 400.0,
+                "estimate_man_hours": 400.0,
+                "task_completion_percentage": 90.0,
+                "completed_task_count": 49,
+                "total_task_count": 55,
+                "final_score": 30.0,
+                "achievement_status": "ACHIEVED"
             },
             {
-                "id": "2",
-                "name": "Arvel Budiono Siregar",
+                "id": "1",
+                "name": "Rizki Haddi Prayoga",
                 "job_position_id": {
                     "id": "1",
                     "name": "Solution Engineer"
                 },
-                "available_man_hours": 100.0,
-                "actual_man_hours": 105.0,
-                "variance_percentage": 5.0,
-                "variance_status": "WITHIN_TARGET",
-                "final_score": 10.0,
-                "achievement_status": "ACHIEVED"
+                "manhour_utilization_percentage": 90.0,
+                "actual_man_hours": 720.0,
+                "estimate_man_hours": 800.0,
+                "task_completion_percentage": 80.0,
+                "completed_task_count": 84,
+                "total_task_count": 105,
+                "final_score": 26.67,
+                "achievement_status": "UNDERACHIEVED"
             }
         ],
         "task_ids": [
