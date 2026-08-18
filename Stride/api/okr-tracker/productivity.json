@@ -1,0 +1,42 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "weightage_in_okr": 10.0,
+        "target_percentage": 10.0,
+        "available_man_hours": 10.0,
+        "actual_man_hours": 8.0,
+        "variance_percentage": -20.0,
+        "variance_status": "OVERESTIMATE",
+        "final_score": 9.0,
+        "achievement_status": "UNDERACHIEVED",
+        "assignees": [
+            {
+                "id": "456",
+                "name": "Rizki Pratama",
+                "available_man_hours": 10.0,
+                "actual_man_hours": 8.0,
+                "variance_percentage": -20.0,
+                "variance_status": "OVERESTIMATE",
+                "final_score": 9.0,
+                "achievement_status": "UNDERACHIEVED"
+            },
+            {
+                "id": "457",
+                "name": "Arvel Setiawan",
+                "available_man_hours": 100.0,
+                "actual_man_hours": 105.0,
+                "variance_percentage": 5.0,
+                "variance_status": "WITHIN_TARGET",
+                "final_score": 10.0,
+                "achievement_status": "ACHIEVED"
+            }
+        ],
+        "task_ids": [
+            "zYjtPaScow8l",
+            "xDc1vT1oeDCjp",
+            "hfUvYICB8svds",
+            "oPu7m1pldfroo"
+        ]
+    }
+}

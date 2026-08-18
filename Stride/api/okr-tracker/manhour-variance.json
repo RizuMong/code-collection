@@ -1,0 +1,44 @@
+{
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "weightage_in_okr": 10,
+        "target_percentage": 10,
+        "available_man_hours": 10,
+        "actual_man_hours": 8,
+        "variance_percentage": -20,
+        "variance_status": "OVERESTIMATE",
+        "final_score": 9,
+        "achievement_status": "UNDERACHIEVED",
+        "assignees": [
+            {
+                "id": "1",
+                "name": "Rizki Haddi Prayoga",
+                "job_position": "Solution Engineer",
+                "available_man_hours": 10,
+                "actual_man_hours": 8,
+                "variance_percentage": -20,
+                "variance_status": "OVERESTIMATE",
+                "final_score": 9,
+                "achievement_status": "UNDERACHIEVED"
+            },
+            {
+                "id": "2",
+                "name": "Arvel Budiono Siregar",
+                "job_position": "Solution Engineer",
+                "available_man_hours": 100,
+                "actual_man_hours": 105,
+                "variance_percentage": 5,
+                "variance_status": "WITHIN_TARGET",
+                "final_score": 10,
+                "achievement_status": "ACHIEVED"
+            }
+        ],
+        "task_ids": [
+            "zYjtPaScow8l",
+            "xDc1vT1oeDCjp",
+            "hfUvYICB8svds",
+            "oPu7m1pldfroo"
+        ]
+    }
+}

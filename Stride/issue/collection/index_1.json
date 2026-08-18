@@ -1,0 +1,280 @@
+        {
+            "client_id": {
+                "id": "HZqP7B3VVtcL",
+                "name": "PT Bintang Sempurna"
+            },
+            "collections": [
+                {
+                    "_id": "6a336b0ab44355994cddd4e9",
+                    "amount": 108000000,
+                    "ids": "izYTaMQDjcfkI",
+                    "planned_invoicing_month": 2,
+                    "planned_invoicing_week": 9,
+                    "planned_invoicing_year": 2026,
+                    "planned_sign_off_month": 2,
+                    "planned_sign_off_week": 9,
+                    "planned_sign_off_year": 2026,
+                    "project_id": {
+                        "actual_mandays": 235.21,
+                        "actual_manhours": 1881.68,
+                        "address": "Bintang Sempurna - ERP Manufacture to POS",
+                        "classification_id": {
+                            "id": "2B9XX75Y651Q",
+                            "name": "New Project"
+                        },
+                        "client_id": {
+                            "id": "HZqP7B3VVtcL",
+                            "name": "PT Bintang Sempurna"
+                        },
+                        "code": "BINT",
+                        "company_id": 28208,
+                        "created_at": 1775057030221,
+                        "created_by": 0,
+                        "id": "daCoNQk4BwPm",
+                        "ids": "daCoNQk4BwPm",
+                        "is_deleted": "NO",
+                        "name": "Bintang Sempurna - ERP Manufacture to POS",
+                        "officeless_version": "2.0",
+                        "planned_end_date": 1796947200000,
+                        "planned_mandays": 418.39,
+                        "planned_manhours": 3347.16,
+                        "planned_start_date": 1765497600000,
+                        "pm_id": {
+                            "id": "wGpdyo4fVJbo",
+                            "name": "Andika Rufiansyah"
+                        },
+                        "project_type_id": {
+                            "id": "izY883QDSft",
+                            "name": "Custom"
+                        },
+                        "sow_mandays": 0,
+                        "sow_manhours": 0,
+                        "status_id": {
+                            "id": "hfUQG1SBHv0R",
+                            "name": "Potential to be Delayed"
+                        },
+                        "total_project_value": 305000000,
+                        "updated_at": 1781754530194,
+                        "updated_by": 0,
+                        "updated_by_project_user": "UKA9XRNLQWI"
+                    },
+                    "remarks": "",
+                    "status_invoicing_id": {
+                        "id": "cEwMbR4u8aff",
+                        "name": "Invoice Sent to Client"
+                    },
+                    "status_sign_off_id": {
+                        "id": "B9LTWb2jGoQn",
+                        "name": "Done Sign Off"
+                    },
+                    "term_of_payment": "COMMERCIAL_DOCS_SIGNED",
+                    "term_of_payment_label": "Commercial Docs Signed"
+                },
+                {
+                    "_id": "6a336b40b44355994cdec419",
+                    "amount": 35000000,
+                    "ids": "B9LClJRjxoHD",
+                    "planned_invoicing_month": 3,
+                    "planned_invoicing_week": 12,
+                    "planned_invoicing_year": 2026,
+                    "planned_sign_off_month": 3,
+                    "planned_sign_off_week": 12,
+                    "planned_sign_off_year": 2026,
+                    "project_id": {
+                        "actual_mandays": 235.21,
+                        "actual_manhours": 1881.68,
+                        "address": "Bintang Sempurna - ERP Manufacture to POS",
+                        "classification_id": {
+                            "id": "2B9XX75Y651Q",
+                            "name": "New Project"
+                        },
+                        "client_id": {
+                            "id": "HZqP7B3VVtcL",
+                            "name": "PT Bintang Sempurna"
+                        },
+                        "code": "BINT",
+                        "company_id": 28208,
+                        "created_at": 1775057030221,
+                        "created_by": 0,
+                        "id": "daCoNQk4BwPm",
+                        "ids": "daCoNQk4BwPm",
+                        "is_deleted": "NO",
+                        "name": "Bintang Sempurna - ERP Manufacture to POS",
+                        "officeless_version": "2.0",
+                        "planned_end_date": 1796947200000,
+                        "planned_mandays": 418.39,
+                        "planned_manhours": 3347.16,
+                        "planned_start_date": 1765497600000,
+                        "pm_id": {
+                            "id": "wGpdyo4fVJbo",
+                            "name": "Andika Rufiansyah"
+                        },
+                        "project_type_id": {
+                            "id": "izY883QDSft",
+                            "name": "Custom"
+                        },
+                        "sow_mandays": 0,
+                        "sow_manhours": 0,
+                        "status_id": {
+                            "id": "hfUQG1SBHv0R",
+                            "name": "Potential to be Delayed"
+                        },
+                        "total_project_value": 305000000,
+                        "updated_at": 1781754530194,
+                        "updated_by": 0,
+                        "updated_by_project_user": "UKA9XRNLQWI"
+                    },
+                    "remarks": "",
+                    "status_invoicing_id": {
+                        "id": "cEwMbR4u8aff",
+                        "name": "Invoice Sent to Client"
+                    },
+                    "status_sign_off_id": {
+                        "id": "B9LTWb2jGoQn",
+                        "name": "Done Sign Off"
+                    },
+                    "term_of_payment": "CR_SIGNED",
+                    "term_of_payment_label": "CR Signed"
+                },
+                {
+                    "_id": "6a336b63b44355994cdf5036",
+                    "amount": 72000000,
+                    "ids": "GkAocS2Ukc85",
+                    "planned_invoicing_month": 9,
+                    "planned_invoicing_week": 4,
+                    "planned_invoicing_year": 2026,
+                    "planned_sign_off_month": 9,
+                    "planned_sign_off_week": 4,
+                    "planned_sign_off_year": 2026,
+                    "project_id": {
+                        "actual_mandays": 235.21,
+                        "actual_manhours": 1881.68,
+                        "address": "Bintang Sempurna - ERP Manufacture to POS",
+                        "classification_id": {
+                            "id": "2B9XX75Y651Q",
+                            "name": "New Project"
+                        },
+                        "client_id": {
+                            "id": "HZqP7B3VVtcL",
+                            "name": "PT Bintang Sempurna"
+                        },
+                        "code": "BINT",
+                        "company_id": 28208,
+                        "created_at": 1775057030221,
+                        "created_by": 0,
+                        "id": "daCoNQk4BwPm",
+                        "ids": "daCoNQk4BwPm",
+                        "is_deleted": "NO",
+                        "name": "Bintang Sempurna - ERP Manufacture to POS",
+                        "officeless_version": "2.0",
+                        "planned_end_date": 1796947200000,
+                        "planned_mandays": 418.39,
+                        "planned_manhours": 3347.16,
+                        "planned_start_date": 1765497600000,
+                        "pm_id": {
+                            "id": "wGpdyo4fVJbo",
+                            "name": "Andika Rufiansyah"
+                        },
+                        "project_type_id": {
+                            "id": "izY883QDSft",
+                            "name": "Custom"
+                        },
+                        "sow_mandays": 0,
+                        "sow_manhours": 0,
+                        "status_id": {
+                            "id": "hfUQG1SBHv0R",
+                            "name": "Potential to be Delayed"
+                        },
+                        "total_project_value": 305000000,
+                        "updated_at": 1781754530194,
+                        "updated_by": 0,
+                        "updated_by_project_user": "UKA9XRNLQWI"
+                    },
+                    "remarks": "",
+                    "status_invoicing_id": {
+                        "id": "tSxNmKcyFJcX",
+                        "name": "Backlog"
+                    },
+                    "status_sign_off_id": {
+                        "id": "tSxNmKcyFJcX",
+                        "name": "Backlog"
+                    },
+                    "term_of_payment": "UAT",
+                    "term_of_payment_label": "UAT"
+                },
+                {
+                    "_id": "6a3a1037b44355994c3f1667",
+                    "amount": 180000000,
+                    "ids": "n0dkk9KqQfKq",
+                    "planned_invoicing_month": 12,
+                    "planned_invoicing_week": 4,
+                    "planned_invoicing_year": 2025,
+                    "planned_sign_off_month": 12,
+                    "planned_sign_off_week": 4,
+                    "planned_sign_off_year": 2025,
+                    "project_id": {
+                        "actual_mandays": 239.45,
+                        "actual_manhours": 1915.63,
+                        "actual_start_date": 1766016000000,
+                        "address": "Bintang Sempurna - ERP Manufacture to POS",
+                        "classification_id": {
+                            "id": "2B9XX75Y651Q",
+                            "name": "New Project"
+                        },
+                        "client_id": {
+                            "id": "HZqP7B3VVtcL",
+                            "name": "PT Bintang Sempurna"
+                        },
+                        "code": "BINT",
+                        "company_id": 28208,
+                        "created_at": 1775057030221,
+                        "created_by": 0,
+                        "id": "daCoNQk4BwPm",
+                        "ids": "daCoNQk4BwPm",
+                        "is_deleted": "NO",
+                        "name": "Bintang Sempurna - ERP Manufacture to POS",
+                        "officeless_version": "2.0",
+                        "planned_end_date": 1796947200000,
+                        "planned_mandays": 426.32,
+                        "planned_manhours": 3410.56,
+                        "planned_start_date": 1765497600000,
+                        "pm_id": {
+                            "id": "wGpdyo4fVJbo",
+                            "name": "Andika Rufiansyah"
+                        },
+                        "project_type_id": {
+                            "id": "izY883QDSft",
+                            "name": "Custom"
+                        },
+                        "sow_mandays": 0,
+                        "sow_manhours": 0,
+                        "status_id": {
+                            "id": "hfUQG1SBHv0R",
+                            "name": "Potential to be Delayed"
+                        },
+                        "total_project_value": 305000000,
+                        "updated_at": 1782180708899,
+                        "updated_by": 0,
+                        "updated_by_project_user": "UKA9XRNLQWI"
+                    },
+                    "remarks": "",
+                    "status_invoicing_id": {
+                        "id": "cEwMbR4u8aff",
+                        "name": "Invoice Sent to Client"
+                    },
+                    "status_sign_off_id": {
+                        "id": "B9LTWb2jGoQn",
+                        "name": "Done Sign Off"
+                    },
+                    "term_of_payment": "KICKOFF",
+                    "term_of_payment_label": "Kickoff"
+                }
+            ],
+            "outstanding_amount": 72000000,
+            "project_manager_id": {
+                "id": "wGpdyo4fVJbo",
+                "name": "Andika Rufiansyah"
+            },
+            "sent_invoice_amount": 323000000,
+            "total_project_value": 395000000
+        }
