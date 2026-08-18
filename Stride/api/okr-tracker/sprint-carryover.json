@@ -2,14 +2,9 @@
     "code": 200,
     "message": "Success Get OKR Sprint Carryover",
     "data": {
-        "weightage_in_okr": 10.0,
-        "target_percentage": 15.0,
         "carryover_percentage": 12.4,
         "committed_task_count": 153,
         "carried_over_task_count": 19,
-        "trend_direction": "IMPROVING",
-        "final_score": 10.0,
-        "achievement_status": "ACHIEVED",
         "sprints": [
             {
                 "sprint_year": 2026,

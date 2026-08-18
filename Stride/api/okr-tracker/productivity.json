@@ -2,9 +2,6 @@
     "code": 200,
     "message": "Success Get Productivity",
     "data": {
-        "weightage_in_okr": 30.0,
-        "final_score": 25.5,
-        "achievement_status": "UNDERACHIEVED",
         "summary": [
             {
                 "key": "MANHOUR_UTILIZATION",
@@ -32,9 +29,7 @@
                 "estimate_man_hours": 400.0,
                 "task_completion_percentage": 90.0,
                 "completed_task_count": 49,
-                "total_task_count": 55,
-                "final_score": 30.0,
-                "achievement_status": "ACHIEVED"
+                "total_task_count": 55
             },
             {
                 "id": "1",
@@ -48,9 +43,7 @@
                 "estimate_man_hours": 800.0,
                 "task_completion_percentage": 80.0,
                 "completed_task_count": 84,
-                "total_task_count": 105,
-                "final_score": 26.67,
-                "achievement_status": "UNDERACHIEVED"
+                "total_task_count": 105
             }
         ],
         "task_ids": [
