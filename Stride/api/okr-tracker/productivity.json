@@ -12,8 +12,12 @@
         "achievement_status": "UNDERACHIEVED",
         "assignees": [
             {
-                "id": "456",
-                "name": "Rizki Pratama",
+                "id": "1",
+                "name": "Rizki Haddi Prayoga",
+                "job_position_id": {
+                    "id": "1",
+                    "name": "Solution Engineer"
+                },
                 "available_man_hours": 10.0,
                 "actual_man_hours": 8.0,
                 "variance_percentage": -20.0,
@@ -22,8 +26,12 @@
                 "achievement_status": "UNDERACHIEVED"
             },
             {
-                "id": "457",
-                "name": "Arvel Setiawan",
+                "id": "2",
+                "name": "Arvel Budiono Siregar",
+                "job_position_id": {
+                    "id": "1",
+                    "name": "Solution Engineer"
+                },
                 "available_man_hours": 100.0,
                 "actual_man_hours": 105.0,
                 "variance_percentage": 5.0,

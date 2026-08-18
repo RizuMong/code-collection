@@ -69,6 +69,25 @@
                 "task_count": 4
             }
         ],
+        "coverage": {
+            "eligible_task_count": 1204,
+            "included_task_count": 1102,
+            "coverage_percentage": 91.5,
+            "excluded": [
+                {
+                    "field": "actual_man_hours",
+                    "task_count": 74
+                },
+                {
+                    "field": "work_item_id",
+                    "task_count": 21
+                },
+                {
+                    "field": "root_cause_category",
+                    "task_count": 7
+                }
+            ]
+        },
         "task_ids": [
             "zYjtPaScow8l",
             "xDc1vT1oeDCjp",

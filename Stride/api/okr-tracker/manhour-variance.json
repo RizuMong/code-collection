@@ -14,7 +14,10 @@
             {
                 "id": "1",
                 "name": "Rizki Haddi Prayoga",
-                "job_position": "Solution Engineer",
+                "job_position_id": {
+                    "id": "1",
+                    "name": "Solution Engineer"
+                },
                 "available_man_hours": 10,
                 "actual_man_hours": 8,
                 "variance_percentage": -20,
@@ -25,7 +28,10 @@
             {
                 "id": "2",
                 "name": "Arvel Budiono Siregar",
-                "job_position": "Solution Engineer",
+                "job_position_id": {
+                    "id": "1",
+                    "name": "Solution Engineer"
+                },
                 "available_man_hours": 100,
                 "actual_man_hours": 105,
                 "variance_percentage": 5,

@@ -23,8 +23,7 @@
         ],
         "reason_breakdown": [
             {
-                "reason": "DEPENDENCY_BLOCKED",
-                "reason_name": "Dependency Blocked",
+                "reason": "Internal",
                 "task_count": 8,
                 "percentage": 42.1
             }
@@ -41,7 +40,10 @@
             ]
         },
         "task_ids": [
-            ""
+            "zYjtPaScow8l",
+            "xDc1vT1oeDCjp",
+            "hfUvYICB8svds",
+            "oPu7m1pldfroo"
         ]
     }
 }
