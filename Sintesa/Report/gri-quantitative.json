@@ -1,0 +1,21 @@
+{
+    "period": 2026,
+    "entity_id": {
+        "id": "1",
+        "name": "Meppo"
+    },
+    "template_id": {
+        "id": "1",
+        "name": "GRI - Quantitative Period 2026"
+    },
+    "category": "General",
+    "code": "2-8a",
+    "description": "Report the total number of new hire.",
+    "metric_name": "New Hire Count",
+    "input_type": "NUMBER",
+    "unit": "Person",
+    "value_number": 12,
+    "value_text": null,
+    "value_date": null,
+    "flow_status": "approved"
+}

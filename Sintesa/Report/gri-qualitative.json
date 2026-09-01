@@ -1,0 +1,23 @@
+{
+    "period": 2026,
+    "entity_id": {
+        "id": "1",
+        "name": "Meppo"
+    },
+    "template_id": {
+        "id": "1",
+        "name": "FGD Kuisioner - Sintesa Group"
+    },
+    "topic_id": {
+        "id": "1",
+        "name": "Sintesa Deliverable Commitment SDG 3: Memperbaiki Kondisi Kesehatan dan Kesejahteraan Lingkungan Kerja"
+    },
+    "gri_sdg_strategy": "GRI 204",
+    "question": "Apakah perusahaan pernah menyelenggarakan sosialisasi terkait pengelolaan limbah, sampah, energi, dan air bekerja sama dengan mitra/non profit organization?",
+    "answer_mode": "Conditional",
+    "follow_up_yes": "Jika ya, jelaskan bentuk program sosialisasi, indikator keberhasilan, serta keterlibatan karyawan dalam penerapan praktik ramah lingkungan.",
+    "follow_up_no": "Jika belum, apakah ada rencana penyelenggaraan program sosialisasi?",
+    "follow_up_single": null,
+    "value": "Yes....",
+    "flow_status": "approved"
+}
