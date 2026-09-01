@@ -8,28 +8,28 @@
                 "name": "Solution Development",
                 "ratio_percentage": 10.4,
                 "numerator_actual_man_hours": 120.5,
-                "denominator_actual_man_hours": 1158.0
+                "denominator_estimate_man_hours": 1158.0
             },
             {
                 "key": "UAT",
                 "name": "User Acceptance Test (UAT)",
                 "ratio_percentage": 5.1,
                 "numerator_actual_man_hours": 59.0,
-                "denominator_actual_man_hours": 1158.0
+                "denominator_estimate_man_hours": 1158.0
             },
             {
                 "key": "HYPERCARE",
                 "name": "Hypercare",
                 "ratio_percentage": 3.0,
                 "numerator_actual_man_hours": 34.7,
-                "denominator_actual_man_hours": 1158.0
+                "denominator_estimate_man_hours": 1158.0
             },
             {
                 "key": "MAINTENANCE",
                 "name": "Maintenance Support",
                 "ratio_percentage": 1.9,
                 "numerator_actual_man_hours": 22.0,
-                "denominator_actual_man_hours": 1158.0
+                "denominator_estimate_man_hours": 1158.0
             }
         ],
         "root_cause_breakdown": [

@@ -1,0 +1,30 @@
+{
+    "period": 2026,
+    "entity_id": {
+        "id": "1",
+        "name": "Meppo"
+    },
+    "sdg_id": {
+        "id": "1",
+        "name": "SDG 1"
+    },
+    "indicator_id": {
+        "id": "1",
+        "name": "Ketersediaan SOP terkait K3 yang lengkap dan mutakhir"
+    },
+    "plan_origin": "HOLDING",
+    "pillar_id": {
+        "id": "1",
+        "name": "Operation"
+    },
+    "impact": "Operations Impact",
+    "key_business_action": "Membuat kebijakan Kesehatan dan Keselamatan Kerja (K3) untuk menciptakan lingkungan kerja yang sehat dan aman",
+    "detail_action_solution": "Pemutakhiran pedoman pelaksanaan Kesehatan dan Keselamatan Kerja (K3)",
+    "sdg_ambition_esg_alignment": "",
+    "baseline": "",
+    "target": "",
+    "unit_id": {},
+    "quantitative": null,
+    "qualitative": "",
+    "evidence": ""
+}

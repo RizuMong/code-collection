@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "accrue_creation_id": {
+                "id": "Bbu_9gQvg",
+                "name": "Accrual Poin Saving Tactical Juni 2026 Konven"
+            },
+            "accrue_sub_ledger": {
+                "id": "WiaF5ciSg",
+                "name": "2722451-3504-00000-0000-000"
+            },
+            "amount": 16298,
+            "amount_origin": 16298,
+            "company_id": 25236,
+            "created_at": 1787717896589,
+            "created_by": 187396,
+            "currency": {
+                "convertion_amount": 16298,
+                "origin_amount": 16298,
+                "origin_currency": "IDR",
+                "rate": 1,
+                "target_currency": "IDR"
+            },
+            "description": "Accrual Poin Saving Tactical Juni 2026 Konven",
+            "exchange_rate": 1,
+            "expense_rc_code": {},
+            "expense_sub_ledger": {},
+            "id": "pcurrgQDg",
+            "id_accrue_creation_sharing_cost": "pcurrgQDg",
+            "origin_currency": "IDR",
+            "target_currency": "IDR",
+            "updated_at": 1787717896589,
+            "updated_by": 187396
+        }
+    ]
+}

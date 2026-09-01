@@ -196,3 +196,18 @@ if (_field.is_custom_wfh) {
   _fieldProperties.wfh_quota_id.is_hidden = false;
   _fieldProperties.wfh_quota_days.is_hidden = false;
 }
+
+
+if (_field.is_new_indicator) {
+  _fieldProperties.indicator_id.is_hidden = true;
+  _fieldProperties.indicator_name.is_hidden = false;
+  _fieldProperties.indicator_code.is_hidden = false;
+  _fieldProperties.evidence.is_hidden = false;
+  _fieldProperties.indicator_unit_id.is_hidden = false;
+} else {
+  _fieldProperties.indicator_id.is_hidden = false;
+  _fieldProperties.indicator_name.is_hidden = true;
+  _fieldProperties.indicator_code.is_hidden = true;
+  _fieldProperties.evidence.is_hidden = true;
+  _fieldProperties.indicator_unit_id.is_hidden = true;
+}

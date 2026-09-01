@@ -1,0 +1,87 @@
+{
+    "code": 200,
+    "data": {
+        "category": {
+            "id": "uuid",
+            "name": "Employment"
+        },
+        "name": "New Hire and Employee Turnover (401-1)",
+        "columns": [
+            {
+                "key": "employee_type",
+                "name": "Employee Type",
+                "sequence": 1
+            },
+            {
+                "key": "gender",
+                "name": "Gender",
+                "sequence": 2
+            }
+        ],
+        "metrics": [
+            {
+                "key": "new_hire_count",
+                "name": "New Hire Count",
+                "input_type": "NUMBER",
+                "unit": {
+                    "id": "uuid",
+                    "name": "Person"
+                },
+                "sequence": 1
+            },
+            {
+                "key": "turnover_rate",
+                "name": "Turnover Rate",
+                "input_type": "PERCENTAGE",
+                "unit": null,
+                "sequence": 2
+            },
+            {
+                "key": "effective_date",
+                "name": "Effective Date",
+                "input_type": "DATE",
+                "unit": null,
+                "sequence": 3
+            },
+            {
+                "key": "is_reported",
+                "name": "Is Reported",
+                "input_type": "YES_NO",
+                "unit": null,
+                "sequence": 4
+            }
+        ],
+        "rows": [
+            {
+                "sequence": 1,
+                "labels": {
+                    "employee_type": "Permanent",
+                    "gender": "Male"
+                }
+            },
+            {
+                "sequence": 2,
+                "labels": {
+                    "employee_type": "Permanent",
+                    "gender": "Female"
+                }
+            },
+            {
+                "sequence": 3,
+                "labels": {
+                    "employee_type": "Contract",
+                    "gender": "Male"
+                }
+            },
+            {
+                "sequence": 4,
+                "labels": {
+                    "employee_type": "Contract",
+                    "gender": "Female"
+                }
+            }
+        ]
+    },
+    "error": false,
+    "message": "Success create master key indicator"
+}
