@@ -6,7 +6,7 @@ function generateSprintCalendar(year, lastEnd) {
 
     // Tentukan start awal
     if (typeof lastEnd === "number" && lastEnd > 0) {
-        startDate = getNextMonday(fromUnix(lastEnd));
+        startDate = getNextMonday(fromMillis(lastEnd));
     } else {
         startDate = getFirstMonday(year);
     }
@@ -30,8 +30,8 @@ function generateSprintCalendar(year, lastEnd) {
         result.push({
             sprint_year: year,
             sprint_number: sprintNumber,
-            start_date: toUnix(startDate),
-            end_date: toUnixEndOfDay(endDate),
+            start_date: toMillis(startDate),
+            end_date: toMillisEndOfDay(endDate),
             name: "SPRINT-" + year + "-" + pad(sprintNumber),
             status: "PLANNED"
         });
@@ -45,9 +45,9 @@ function generateSprintCalendar(year, lastEnd) {
     return result;
 }
 
-// helpers (tetap sama)
-function fromUnix(ts) {
-    return new Date(ts * 1000);
+// helpers
+function fromMillis(ms) {
+    return new Date(ms);
 }
 
 function getNextMonday(date) {
@@ -87,27 +87,30 @@ function addWorkingDays(date, days) {
     return result;
 }
 
-function toUnix(date) {
-    return Math.floor(date.getTime() / 1000);
+function toMillis(date) {
+    return date.getTime();
 }
 
-function toUnixEndOfDay(date) {
-    return Math.floor(
-        new Date(
-            date.getFullYear(),
-            date.getMonth(),
-            date.getDate(),
-            23, 59, 59
-        ).getTime() / 1000
-    );
+function toMillisEndOfDay(date) {
+    return new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        date.getDate(),
+        23, 59, 59, 999
+    ).getTime();
 }
 
 function pad(num) {
     return num < 10 ? "0" + num : "" + num;
-}
+};
+
+var year = 2027;
+var sprint_year = {
+    "end_date": 1799427599,
+};
 
 
-// Example usage
-var lastEnd = 1799427599; // optional, dari DB
-var sprints = generateSprintCalendar(2027, lastEnd);
+var lastEnd = sprint_year.end_date;
+var sprints = generateSprintCalendar(year, lastEnd);
+
 console.log(sprints);

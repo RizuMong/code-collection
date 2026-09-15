@@ -1,44 +1,70 @@
 {
     "code": 200,
-    "message": "Success Get OKR Sprint Carryover",
     "data": {
-        "carryover_percentage": 12.4,
-        "committed_task_count": 153,
-        "carried_over_task_count": 19,
-        "sprints": [
-            {
-                "sprint_year": 2026,
-                "sprint_number": 34,
-                "start_date": 1770000000000,
-                "end_date": 1771209600000,
-                "committed_task_count": 52,
-                "carried_over_task_count": 7,
-                "carryover_percentage": 13.5
-            }
-        ],
+        "carried_over_task_count": 24,
+        "carryover_percentage": 2.6,
+        "committed_task_count": 918,
         "reason_breakdown": [
             {
+                "percentage": 66.7,
                 "reason": "Internal",
-                "task_count": 8,
-                "percentage": 42.1
+                "task_count": 16
+            },
+            {
+                "percentage": 33.3,
+                "reason": "External",
+                "task_count": 8
             }
         ],
-        "coverage": {
-            "eligible_task_count": 19,
-            "included_task_count": 14,
-            "coverage_percentage": 73.7,
-            "excluded": [
-                {
-                    "field": "carry_over_reason",
-                    "task_count": 5
-                }
-            ]
-        },
+        "sprints": [
+            {
+                "carried_over_task_count": 24,
+                "carryover_percentage": 2.6,
+                "committed_task_count": 918,
+                "end_date": 1789750799999,
+                "sprint_number": 18,
+                "sprint_year": 2026,
+                "start_date": 1788714000000,
+                "reason_breakdown": [
+                    {
+                        "percentage": 66.7,
+                        "reason": "Internal",
+                        "task_count": 16
+                    },
+                    {
+                        "percentage": 33.3,
+                        "reason": "External",
+                        "task_count": 8
+                    }
+                ]
+            }
+        ],
         "task_ids": [
-            "zYjtPaScow8l",
-            "xDc1vT1oeDCjp",
-            "hfUvYICB8svds",
-            "oPu7m1pldfroo"
+            "rviztn5CtJll4",
+            "tSoPJZkyv5JuL",
+            "AeXn5hvsE1qp",
+            "RHMWswoeYNU",
+            "rviztn5CClam",
+            "2BFpcCnYMk5Ct",
+            "zYwG1mTcswcS",
+            "58HZDwDQoZLv",
+            "hfL5aiMB8Mvl",
+            "31JrU6cWkpEk",
+            "N2jFTwQzzXCb",
+            "zYwF0BEcYw8E",
+            "9LQ8rk2FRRqVo",
+            "MWdJj8OnoeyPn",
+            "QRVZlwVAcS434",
+            "UK86SuaLaWEE",
+            "UK86SPwLg0WIm",
+            "B9p5OvkjGorg",
+            "PuBfq4uNjM6P",
+            "oP2hbVzl7rBX",
+            "KsgXxyt5FwQGO",
+            "xDuEX8uoe1CT9",
+            "31Jy9zCW8pR9",
+            "9LQ8J0oFRbqmp"
         ]
-    }
+    },
+    "message": "Success Get OKR Sprint Carryover"
 }

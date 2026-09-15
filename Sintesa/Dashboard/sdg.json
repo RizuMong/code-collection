@@ -1,0 +1,72 @@
+{
+    "data": {
+        "summary": [
+            {
+                "key": "sdg_roadmap",
+                "name": "Holding SDG Roadmap",
+                "description": "Adopted dari total 17 SDG PBB",
+                "value": 9,
+                "total": 17
+            },
+            {
+                "key": "strategic_alignment",
+                "name": "Strategic Alignment",
+                "description": "Actions mapped to Holding SDGs",
+                "value": 82
+            },
+            {
+                "key": "execution_rate",
+                "name": "Avg. Execution Rate",
+                "description": "Overall 'Take' ratio on mandates",
+                "value": 74
+            },
+            {
+                "key": "bottom_up_initiatives",
+                "name": "Bottom-Up Initiatives",
+                "description": "Actions outside Holding Roadmap",
+                "value": 28
+            }
+        ],
+        "matrix": [
+            {
+                "entity_id": {
+                    "id": "1",
+                    "name": "Sintesa"
+                },
+                "entity_type": "HOLDING",
+                "period": 2026,
+                "execution_percentage": 10,
+                "adoption_take_count": 9,
+                "adoption_skip_count": 1,
+                "actions": [
+                    {
+                        "ids": "123",
+                        "sdg_id": {
+                            "id": "s6X9n1U8Bjl0",
+                            "name": "SDG 12"
+                        },
+                        "adoption_status": "TAKE",
+                        "baseline": "baseline sekarang",
+                        "target": "target nanti",
+                        "created_at": null,
+                        "updated_at": null,
+                        "detail_action_solution": "Berinvestasi pada energi terbarukan",
+                        "impact": "Operations Impact",
+                        "indicator_id": {
+                            "id": "oP229ralLrzM",
+                            "name": "Sustainability Investment",
+                            "evidence": "Required"
+                        },
+                        "pillar_id": {
+                            "id": "qT4ROSu3d1NL",
+                            "name": "Operation"
+                        },
+                        "key_business_action": "Kerjasama dengan mitra kerja/ non profit organization yang bergerak di bidang keselamatan kerja",
+                        "plan_origin": "HOLDING",
+                        "sdg_ambition_esg_alignment": "SDG 1"
+                    }
+                ]
+            }
+        ]
+    }
+}

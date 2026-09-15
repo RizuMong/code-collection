@@ -1,0 +1,198 @@
+{
+    "data": [
+        {
+            "category": "GENERAL",
+            "summary": [
+                {
+                    "key": "total_employee",
+                    "name": "Total Karyawan",
+                    "value": 8614,
+                    "unit_id": null,
+                    "aggregation": "SUM"
+                },
+                {
+                    "key": "male",
+                    "name": "Laki-laki",
+                    "value": 4477,
+                    "unit_id": null,
+                    "aggregation": "SUM"
+                },
+                {
+                    "key": "female",
+                    "name": "Perempuan",
+                    "value": 4137,
+                    "unit_id": null,
+                    "aggregation": "SUM"
+                }
+            ],
+            "items": [
+                {
+                    "id": "123",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-7a",
+                    "metric_name": "Employee Headcount",
+                    "description": "Laki-laki",
+                    "value": 880,
+                    "unit_id": null,
+                    "input_type": "NUMBER"
+                },
+                {
+                    "id": "124",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-7a",
+                    "metric_name": "Employee Headcount",
+                    "description": "Perempuan",
+                    "value": 1680,
+                    "unit_id": null,
+                    "input_type": "NUMBER"
+                },
+                {
+                    "id": "125",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-7b",
+                    "metric_name": "Female Manager Ratio",
+                    "description": "Manajerial",
+                    "value": 28.5,
+                    "unit_id": {
+                        "id": "9",
+                        "name": "%"
+                    },
+                    "input_type": "PERCENTAGE"
+                },
+                {
+                    "id": "126",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-2",
+                    "metric_name": "Reporting Boundary Note",
+                    "description": "Cakupan entitas pelaporan",
+                    "value": "Mencakup seluruh unit operasional di Jawa dan Sumatera",
+                    "unit_id": null,
+                    "input_type": "TEXT"
+                },
+                {
+                    "id": "127",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-3",
+                    "metric_name": "Reporting Period End Date",
+                    "description": "Tanggal akhir periode pelaporan",
+                    "value": "2025-12-31",
+                    "unit_id": null,
+                    "input_type": "DATE"
+                },
+                {
+                    "id": "128",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "2-23",
+                    "metric_name": "Has Sustainability Policy",
+                    "description": "Kepemilikan kebijakan keberlanjutan",
+                    "value": true,
+                    "unit_id": null,
+                    "input_type": "BOOLEAN"
+                }
+            ]
+        },
+        {
+            "category": "ENERGY",
+            "summary": [
+                {
+                    "key": "total_non_renewable",
+                    "name": "Total Non-Renewable (GJ)",
+                    "value": 469790,
+                    "unit_id": {
+                        "id": "3",
+                        "name": "GJ"
+                    },
+                    "aggregation": "SUM"
+                },
+                {
+                    "key": "total_renewable",
+                    "name": "Total Renewable (GJ)",
+                    "value": 43950,
+                    "unit_id": {
+                        "id": "3",
+                        "name": "GJ"
+                    },
+                    "aggregation": "SUM"
+                },
+                {
+                    "key": "renewable_ratio",
+                    "name": "% Energi Terbarukan",
+                    "value": 9,
+                    "unit_id": {
+                        "id": "9",
+                        "name": "%"
+                    },
+                    "aggregation": "PERCENTAGE"
+                }
+            ],
+            "items": [
+                {
+                    "id": "456",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "302-1a",
+                    "metric_name": "Energy Consumption",
+                    "description": "Non-Renewable",
+                    "value": 132000,
+                    "unit_id": {
+                        "id": "3",
+                        "name": "GJ"
+                    },
+                    "input_type": "NUMBER"
+                },
+                {
+                    "id": "457",
+                    "period": 2025,
+                    "entity": {
+                        "id": "Ks6BgE75YiQ1",
+                        "code": "WS",
+                        "name": "Waskita Sintesa"
+                    },
+                    "gri_code": "302-1b",
+                    "metric_name": "Energy Consumption",
+                    "description": "Renewable",
+                    "value": 14200,
+                    "unit_id": {
+                        "id": "3",
+                        "name": "GJ"
+                    },
+                    "input_type": "NUMBER"
+                }
+            ]
+        }
+    ]
+}
